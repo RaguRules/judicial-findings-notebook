@@ -5,7 +5,7 @@ require_once "../../lib/db.class.php";
 
 function conn(){
     echo "API starts...";
-    $db = new Database();
+    $db = new Database("db.db");
     $conn = $db->getConnection();
 
 }

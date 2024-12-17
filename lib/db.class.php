@@ -4,7 +4,7 @@ class Database {
     public $db;
     public $dbpath = "db.db";
 
-    public function __construct($dbpath="db.db"){
+    public function __construct($dbpath){
         echo "contructor is executed";
         $this->db = new SQLite3 ($dbpath);
     }
