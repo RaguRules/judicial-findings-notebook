@@ -1,18 +1,18 @@
 <?php
-class Database {
-    private $db;
 
-    public function __construct() {
-        $this->db = new \SQLite3('notes_app.db', SQLITE3_OPEN_READWRITE | SQLITE3_OPEN_CREATE);
-        $this->db->exec('PRAGMA foreign_keys = ON;'); // Ensure FK enforcement
+class Database {
+    public $db;
+    public $dbpath = "db.db";
+
+    public function __contruct($dbpath){
+        $this->db = new SQLite3 ($dbpath);
+        echo "contructor is executed";
     }
 
-    public function getDb() {
+    public function getConnection(){
+        echo "get conn func work";
         return $this->db;
     }
-
-    public function close() {
-        $this->db->close();
-    }
 }
+
 ?>
