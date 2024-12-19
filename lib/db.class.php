@@ -2,7 +2,7 @@
 
 class Database {
     public $db;
-    public $dbpath = "db.db";
+    // public $dbpath = "db.db";
 
     public function __construct($dbpath){
         echo "contructor is executed";
