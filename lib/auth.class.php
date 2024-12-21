@@ -2,139 +2,47 @@
 
 require_once("db.class.php");
 
-class AuthManager{
+class AuthManager extends Database{
 
     public function __construct(){
-        // $this->username = $username;
-        // $this->password = $password;
-        $this->database = new Database("../../../model/data.db");
-        $this->conn = $this->database->getConn();
-
+        parent::__construct("../../../model/data.db");
     }
+
 
     public function getUser(){
         return $this->username;
     }
 
-    // public function signup(){   
-    //     try{
-    //         // $this->database = new Database("data.db");
-    //         // $this->database = new Database("data.db");
-    //         $this->conn->exec("CREATE TABLE IF NOT EXISTS users (
-    //             id INTEGER PRIMARY KEY AUTOINCREMENT, 
-    //             username TEXT NOT NULL,
-    //             password TEXT NOT NULL
-    //         )");
-    //         echo "ok"; 
-    
-            // $stmt = $this->conn->prepare("INSERT INTO users (username, password) VALUES ('ab', 'b')");
-    
-            // // Assuming $this->username and $this->password are already sanitized and validated
-            // // $stmt->bindValue(':username', $this->username, SQLITE3_TEXT);
-            // // $stmt->bindValue(':password', $this->password, SQLITE3_TEXT); // Make sure $this->password is hashed!
-            // $stmt->execute();
-
-    //         // $stmt = $this->conn->prepare("INSERT INTO users (username, password) VALUES (:username, :password)");
-
-    //         // // "CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY AUTOINCREMENT, username TEXT UNIQUE NOT NULL,password TEXT NOT NULL)"
-
-    //         // $stmt->bindValue(':username', $this->username, SQLITE3_TEXT); 
-    //         // $stmt->bindValue(':password', $this->password, SQLITE3_TEXT);
-    //         // $stmt->execute();
-
-
-
-    //         $stmt = $this->conn->prepare("SELECT * FROM users"); 
-    //         $stmt->execute();
-
-    //         // $results = $stmt->fetchAll(PDO::FETCH_ASSOC); // Fetch all results as an associative array
-    //         $results = [];
-    //         while ($row = $stmt->fetchArray(SQLITE3_ASSOC)) {
-    //             $results[] = $row;
-    //         }
-
-    //         // Fetch and display user data (for demonstration)
-    //         $stmt2 = $this->conn->prepare("SELECT * FROM users");
-    //         $stmt2->execute();
-
-    //         $results = [];
-    //         while ($row = $stmt2->fetchArray(SQLITE3_ASSOC)) {
-    //             $results[] = $row;
-    //         }
-
-    //         foreach ($results as $row) {
-    //             echo "ID: " . $row['id'] . ", Username: " . $row['username'] . ", Password: " . $row['password'] . "<br>";
-    //         }
-
-
-
-
-
-    //     }catch(Exception $e){
-    //         echo $e->getMessage();
-    //     }  
-
-        
-    // }
 
     public function signup($username, $password) {
-        try {
-            // Create the users table if it doesn't exist
-            $this->conn->exec("CREATE TABLE IF NOT EXISTS users (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                username TEXT NOT NULL,
-                password TEXT NOT NULL
-            )");
 
-            // Hash the password 
-            $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+        $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-            // Register new user
-            $stmt_write = $this->conn->prepare("INSERT INTO users (username, password) VALUES (:username, :password)");
-            $stmt_write->bindValue(':username', $username, PDO::PARAM_STR);
-            $stmt_write->bindValue(':password', $hashedPassword, PDO::PARAM_STR);
-            $stmt_write->execute();
+        $results = $this->register($username, $hashedPassword);
 
-            // fetchArray() is in SQLite3Stml class from sqlite3 extension/Driver; not from PDO. instead use  fetch(PDO::FETCH::FETCH_ASSOC);
-            // $stmt_read = $this->conn->prepare("SELECT * FROM users"); 
-            $stmt_read = $this->conn->prepare("SELECT * FROM users"); 
-            $stmt_read->execute();
-
-            $results = [];
-            while ($row = $stmt_read->fetch(PDO::FETCH_ASSOC)) { 
-                $results[] = $row['username'];
-            }
-            // Instead of using print_r($results), which displays the array structure, the code now uses a foreach loop to iterate through the $results array.
-            // Inside the loop, echo $username . "<br>"; prints each username followed by a line break (<br>)
-            // print_r($results);
-            foreach($results as $user){
-                echo $user . "<br>";
-            }
-
-        } catch (PDOException $e) {
-            if($e->getCode()==23000){ //Error code for Integrity constraint violation
-                echo "This username is already taken. Choose a different username!";
-            }else{
-                echo "Error: " . $e->getCode() . $e->getMessage();
-            }
-        }
+       if($results){
+            echo "You have successfully registered. Go to log in";
+       }
     }
+
 
     public function login($username, $password){
         
-            $user = $this->database->signin($username, $password);
+            $user = $this->signin($username, $password);
 
             if($user && password_verify($password, $user['password'])){
-                // post login actions. i.e. Token gen and maintain
                 echo "Login Success";
+
+                // post login actions. i.e. Token gen and maintain
+                $this->invalidateTokens($user['id']);
 
                 $accessToken = $this->genToken($user['id'], 'access', 5);
                 $refreshToken = $this->genToken($user['id'], 'refresh', 30*24*60);
-                // $this->storeToken($user['id'], $accessToken, $refreshToken);
-                print_r("[
-                    'access_token' => $accessToken,
-                    'refresh_token' => $refreshToken
-                ]");
+                
+                // print_r("[
+                //     'access_token' => $accessToken,
+                //     'refresh_token' => $refreshToken
+                // ]");
 
                 return [
                     'access_token' => $accessToken,
@@ -146,11 +54,9 @@ class AuthManager{
             }
     }
 
-    // public function logout($user="1"){
-    //     $this->database->deleteToken($user); 
-    // }
+
     public function logout($accessToken){
-        $this->database->deleteToken($accessToken);
+        $this->deleteToken($accessToken);
     }
 
 
@@ -161,8 +67,12 @@ class AuthManager{
         $created = date("Y-m-d H:i:s");
         $expiry = date("Y-m-d H:i:s", strtotime("+$expiryMinutes minutes"));
 
-        return $this->database->writeTokensOnDb($userId, $token, $tokenType, $created, $expiry);
+        return $this->writeTokensOnDb($userId, $token, $tokenType, $created, $expiry);
+    }
 
+
+    public function refreshAccessToken($refreshToken){
+        $this->refreshingAccessToken($refreshToken);
     }
 
 }
