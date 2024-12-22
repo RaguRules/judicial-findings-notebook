@@ -36,7 +36,7 @@ class AuthManager extends Database{
                 // post login actions. i.e. Token gen and maintain
                 $this->invalidateTokens($user['id']);
 
-                $accessToken = $this->genToken($user['id'], 'access', 5);
+                $accessToken = $this->genToken($user['id'], 'access', 10);
                 $refreshToken = $this->genToken($user['id'], 'refresh', 30*24*60);
                 
                 // print_r("[
@@ -73,6 +73,24 @@ class AuthManager extends Database{
 
     public function refreshAccessToken($refreshToken){
         $this->refreshingAccessToken($refreshToken);
+    }
+
+
+    public function validateToken($token) {
+        
+        $result = $this->isValidateToken($token);
+
+        if ($result && $result['expires_at'] > date('Y-m-d H:i:s')) {
+            echo "Valid Token";
+            return [
+                'user_id' => $result['user_id'],
+                'type' => $result['type']
+            ];
+        } else {
+            echo "Invalid Token";
+            return false; // Invalid or expired token
+        }
+
     }
 
 }

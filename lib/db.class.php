@@ -1,6 +1,10 @@
 <?php
-// -----Newer PDO_SQLite driver based approach-----
+
+// ------------Newer PDO_SQLite driver based approach------------
+
 class Database{
+
+    // ---------------------------------SECTION 1:  FOR DATABASE CLASS ITSELF ---------------------------------
 
     private $db;
 
@@ -16,7 +20,6 @@ class Database{
     }
 
     protected function createTables() {
-    //     echo "createTables func starts...<br>";
         $usersTableSQL = "CREATE TABLE IF NOT EXISTS users (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             username TEXT UNIQUE NOT NULL,
@@ -53,7 +56,6 @@ class Database{
         $this->db->exec($usersTableSQL);
         $this->db->exec($tokensTableSQL);
         $this->db->exec($notesTableSQL);
-        // echo "createTables func ends...<br>";
     }
 
 
@@ -61,11 +63,10 @@ class Database{
         return $this->db;
     }
 
+     // ---------------------------------SECTION 2:  FOR AUTH CLASS ---------------------------------
 
     protected function register($newuser, $hashedPassword){
         try {
-            // echo "came to db.class.php";
-            // Create the users table if it doesn't exist
             $this->getConn()->exec("CREATE TABLE IF NOT EXISTS users (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 username TEXT NOT NULL,
@@ -132,7 +133,6 @@ class Database{
             $stmt->execute();
         } catch (PDOException $e) {
             echo'Error '. $e->getMessage();
-            // error_log("Error invalidating tokens: " . $e->getMessage());
             return false;
         }
     }
@@ -196,10 +196,46 @@ class Database{
             echo $e->getCode() . $e->getMessage();
         }
     }
+
+
+    protected function isValidateToken($token){
+        try {
+            $stmt = $this->db->prepare("SELECT user_id, type, expires_at FROM auth_tokens WHERE token = :token");
+            $stmt->bindValue(':token', $token, PDO::PARAM_STR);
+            $stmt->execute();
+            $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    
+            return $result;
+    
+        } catch (PDOException $e) {
+            echo "$e->getCode() . $e->getMessage()";
+        }
+    }
+
+
+     // ---------------------------------SECTION 3:  FOR NOTES CLASS ---------------------------------
+
+     protected function noteCreate($userId, $title, $content,$createdAt){
+        try {
+            $stmt = $this->db->prepare("INSERT INTO notes (user_id, title, content, created_at) VALUES (:user_id, :title, :content, :created_at)");
+            $stmt->bindValue(':user_id', $userId, PDO::PARAM_INT);
+            $stmt->bindValue(':title', $title, PDO::PARAM_STR);
+            $stmt->bindValue(':content', $content, PDO::PARAM_STR);
+            $stmt->bindValue(':created_at', $createdAt, PDO::PARAM_STR);
+            $stmt->execute();
+            // echo "Notes created...";
+            return true;
+
+        } catch (PDOException $e) {
+            echo "Error creating Notes: " . $e->getCode() . $e->getMessage();
+            return false;
+        }
+    }
+
 }
 
 
-// -----Older sqlite driver based approach-----
+// ------------Older sqlite driver based approach------------
 
 // class Database {
 //     public $db;
