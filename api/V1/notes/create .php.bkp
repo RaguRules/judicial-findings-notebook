@@ -31,7 +31,7 @@ if (!$tokenValid) {
     sendJsonResponse(401, ['status' => 'error', 'message' => 'Invalid or expired access token.']); 
 }
 
-// ValidateToken() method returns an array with user_id and token type
+// Assuming your validateToken() method returns an array with user_id and token type
 $userId = $tokenValid['user_id']; 
 $tokenType = $tokenValid['type']; 
 
@@ -42,22 +42,25 @@ if ($tokenType !== 'access') {
 
 
 // Now you have the $userId for the authenticated user.
-// API code to delete the note
+// API code to create the note
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // $data = json_decode(file_get_contents('php://input'), true);
     $title = $_POST['title'] ?? ''; // Get the title from form data
+    $content = $_POST['content'] ?? ''; // Get the content from form data
+    echo "Title is: $title";
+    echo "Content is: $content";
 
 
-    if (isset($title)) {
-        $noteId = $notesManager->deleteNotes($userId, $title);
+    if (isset($title) && isset($content)) {
+        $noteId = $notesManager->createNotes($userId, $title, $content);
 
         if ($noteId) {
-            sendJsonResponse(201, ['status' => 'success', 'message' => 'Note deleted successfully', 'note_id' => $noteId]);
+            sendJsonResponse(201, ['status' => 'success', 'message' => 'Note created successfully', 'note_id' => $noteId]);
         } else {
-            sendJsonResponse(500, ['status' => 'error', 'message' => 'Failed to delete note']);
+            sendJsonResponse(500, ['status' => 'error', 'message' => 'Failed to create note']);
         }
     } else {
-        sendJsonResponse(400, ['status' => 'error', 'message' => 'Missing title']);
+        sendJsonResponse(400, ['status' => 'error', 'message' => 'Missing title or content']);
     }
 } else {
     sendJsonResponse(405, ['status' => 'error', 'message' => 'Method Not Allowed']);

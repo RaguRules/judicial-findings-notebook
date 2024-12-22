@@ -180,7 +180,7 @@ class Database{
                 $userId = $result['user_id'];
 
                 $newAccessToken = bin2hex(random_bytes(32));
-                $newExpiry = date('Y-m-d H:i:s', strtotime('+10 minutes'));
+                $newExpiry = date('Y-m-d H:i:s', strtotime('+30 minutes'));
 
                 $stmt = $this->db->prepare("UPDATE auth_tokens SET token = :token, expires_at = :expires_at WHERE user_id = :user_id AND type = 'access'");
                 $stmt->bindValue(':token', $newAccessToken, PDO::PARAM_STR);
@@ -215,7 +215,7 @@ class Database{
 
      // ---------------------------------SECTION 3:  FOR NOTES CLASS ---------------------------------
 
-     protected function noteCreate($userId, $title, $content,$createdAt){
+    protected function noteCreate($userId, $title, $content,$createdAt){
         try {
             $stmt = $this->db->prepare("INSERT INTO notes (user_id, title, content, created_at) VALUES (:user_id, :title, :content, :created_at)");
             $stmt->bindValue(':user_id', $userId, PDO::PARAM_INT);
@@ -229,6 +229,127 @@ class Database{
         } catch (PDOException $e) {
             echo "Error creating Notes: " . $e->getCode() . $e->getMessage();
             return false;
+        }
+    }
+
+
+// Mistakes
+// Incorrect comparison: You were comparing the entire $this->noteToDelete array (which holds the note data, including id, title, etc.) with the $title string. This comparison would always be false because an array is not equal to a string.
+// Deleting by title only: You were using the $title to delete the note, which could potentially delete multiple notes if the user had multiple notes with the same title.
+// I didn't explicitly declare $noteToDelete as an array. However, in PHP, you don't need to explicitly declare variable types. PHP determines the type of a variable dynamically based on the value assigned to it.
+    // protected function noteDelete($userId, $title){
+    //     echo "$title";
+    //     try{
+    //         try{
+    //             $stmt = $this->db->prepare("SELECT * FROM notes WHERE user_id=:user_id");
+    //             $stmt->bindValue(':user_id', $userId);
+    //             $stmt->execute();
+    //             // $result = $stmt->fetch(PDO::FETCH_ASSOC);
+                
+    //             $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    //             // print_r($result);
+
+    //             $noteToDelete = null;
+    //             foreach ($result as $note) { // $result is an array of arrays
+    //                 // print_r($note);
+    //                 $tit = $note['title'];
+    //                 // echo "$tit";
+    //                 echo "$title";
+    //                 if ($tit == $title) {
+    //                     $this->noteToDelete = $note; // Assigning an array to $noteToDelete
+    //                     print_r("$noteToDelete");
+    //                     break;
+    //                 }
+    //             }
+    //         }catch (PDOException $e){
+    //             echo "Invalid User";
+    //             echo $e->getMessage();
+    //         }
+    //         if (!$result){
+    //             echo "No Notes found for this user.";
+    //             return false;
+    //         }
+
+    //         // echo "$result['title']";
+    //         // $r = $result['title'];
+    //         // echo "$r";
+    //         // echo "$title";
+    //         // $selectedNote = $result['title'];
+    //         if ($this->noteToDelete == $title){
+    //             try{
+    //                 echo "True";
+    //                 $stmt = $this->db->prepare("DELETE FROM notes WHERE title =:title");
+    //                 // $stmt->bindValue(':title', $selectedNote, PDO::PARAM_STR);
+    //                 $stmt->bindValue(':title', $title, PDO::PARAM_STR);
+    //                 $stmt->execute();
+    //                 echo "<br> Note has been deleted.";
+    //                 return true;
+    //             }catch (PDOException $e){
+    //                 echo "False";
+    //                 echo $e->getMessage();
+    //             }
+    //         }else{
+    //             echo "Deletion failed! Either no notes found or This Notes could be created by another user!!";
+    //             return false;
+    //         }
+
+    //     }catch(PDOExeption $e){
+    //         echo $e->getCode() . $e->getMessage();
+    //     }
+
+    // }
+   
+    protected function noteDelete($userId, $title) {
+        echo "$title";
+        try {
+            try {
+                $stmt = $this->db->prepare("SELECT * FROM notes WHERE user_id=:user_id");
+                $stmt->bindValue(':user_id', $userId);
+                $stmt->execute();
+    
+                // Fetch all results into $result
+                $result = $stmt->fetchAll(PDO::FETCH_ASSOC); 
+    
+                $noteToDelete = null;
+                foreach ($result as $note) {
+                    // $tit = $note['title'];
+                    if ($note['title'] == $title) {
+                        $noteToDelete = $note; 
+                        print_r($noteToDelete); 
+                        break;
+                    }
+                }
+            } catch (PDOException $e) {
+                echo "Invalid User";
+                echo $e->getMessage();
+            }
+    
+            if (!$result) {
+                echo "No Notes found for this user.";
+                return false;
+            }
+    
+            // Check if a note to delete was found
+            if ($noteToDelete) { 
+                try {
+                    echo "True";
+                    // Use the ID of the found note to delete
+                    $stmt = $this->db->prepare("DELETE FROM notes WHERE id = :id"); 
+                    $stmt->bindValue(':id', $noteToDelete['id'], PDO::PARAM_INT); 
+                    $stmt->execute();
+                    echo "<br> Note has been deleted.";
+                    return true;
+                } catch (PDOException $e) {
+                    echo "False";
+                    echo $e->getMessage();
+                }
+            } else {
+                echo "Deletion failed! Either no notes found or This Notes could be created by another user!!";
+                return false;
+            }
+    
+        } catch (PDOException $e) {
+            echo $e->getCode() . $e->getMessage();
         }
     }
 

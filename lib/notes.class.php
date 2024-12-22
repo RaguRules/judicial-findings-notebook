@@ -17,4 +17,10 @@ class NotesManager extends Database{
         }
 
     }
+
+
+    public function deleteNotes($userId, $title){
+        return $this->noteDelete($userId, $title);
+        
+    }
 }

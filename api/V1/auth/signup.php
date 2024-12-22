@@ -3,6 +3,6 @@
 include_once("../../../lib/auth.class.php");
 
 $checkAuth = new AuthManager ();
-$checkAuth->signup("Sanchi", "Sri");
+$checkAuth->signup("Rabbit", "Rabbit");
 
 ?>
