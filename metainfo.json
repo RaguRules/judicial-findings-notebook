@@ -1,0 +1,140 @@
+{
+  "project_name": "Notes App",
+  "description": "A secure web application for creating, storing, and managing notes.",
+  "author": "Srirajeswaran Raguraj",
+  "version": "1.0.0", 
+  "date_created": "2024-12-26", 
+  "technologies": {
+    "frontend": "HTML, CSS, JavaScript",
+    "backend": "PHP",
+    "database": "SQLite3",
+    "server": "Apache2"
+  },
+  "features": [
+    "User registration and login with secure password hashing",
+    "Token-based authentication (access and refresh tokens)",
+    "Note creation, retrieval, updating, and deletion",
+    "RESTful API endpoints for all functionalities",
+    "Input validation and sanitization to prevent security vulnerabilities"
+  ],
+  "files": [
+    {
+      "name": "db.class.php",
+      "description": "Handles database connection and table creation"
+    },
+    {
+      "name": "auth.class.php",
+      "description": "Manages user authentication, token generation, and logout"
+    },
+    {
+      "name": "notes.class.php",
+      "description": "Handles note-related operations (create, read, update, delete)"
+    },
+    {
+      "name": "rest.api.php",
+      "description": "Base class for RESTful API endpoints"
+    },
+    {
+      "name": "signup.php",
+      "description": "API endpoint for user signup"
+    },
+    {
+      "name": "login.php",
+      "description": "API endpoint for user login"
+    },
+    {
+      "name": "createNotes.php",
+      "description": "API endpoint for creating notes"
+    },
+    {
+      "name": "getNotes.php",
+      "description": "API endpoint for retrieving notes"
+    },
+    {
+      "name": "updateNote.php",
+      "description": "API endpoint for updating notes"
+    },
+    {
+      "name": "deleteNote.php",
+      "description": "API endpoint for deleting notes"
+    },
+    {
+      "name": "index.api.php",
+      "description": "Main API entry point for handling API requests"
+    }
+    // ... add other files and their descriptions
+  ],
+  "database_schema": {
+    "users": [
+      {"column": "id", "type": "INTEGER", "constraints": "PRIMARY KEY AUTOINCREMENT"},
+      {"column": "username", "type": "TEXT", "constraints": "UNIQUE NOT NULL"},
+      {"column": "password", "type": "TEXT", "constraints": "NOT NULL"}
+    ],
+    "auth_tokens": [
+      {"column": "id", "type": "INTEGER", "constraints": "PRIMARY KEY AUTOINCREMENT"},
+      {"column": "user_id", "type": "INTEGER", "constraints": "NOT NULL"},
+      {"column": "token", "type": "TEXT", "constraints": "UNIQUE NOT NULL"},
+      {"column": "type", "type": "TEXT", "constraints": "NOT NULL"},
+      {"column": "created_at", "type": "TEXT", "constraints": "NOT NULL"},
+      {"column": "expires_at", "type": "TEXT", "constraints": "NOT NULL"},
+      {"constraint": "FOREIGN KEY (user_id) REFERENCES users (id)"}
+    ],
+    "notes": [
+      {"column": "id", "type": "INTEGER", "constraints": "PRIMARY KEY AUTOINCREMENT"},
+      {"column": "user_id", "type": "INTEGER", "constraints": "NOT NULL"},
+      {"column": "title", "type": "TEXT", "constraints": "NOT NULL"},
+      {"column": "content", "type": "TEXT"},
+      {"column": "created_at", "type": "TEXT", "constraints": "NOT NULL"},
+      {"constraint": "FOREIGN KEY (user_id) REFERENCES users (id)"}
+    ]
+  },
+  "api_endpoints": [
+    {
+      "endpoint": "/signup",
+      "method": "POST",
+      "description": "Registers a new user"
+    },
+    {
+      "endpoint": "/login",
+      "method": "POST",
+      "description": "Logs in a user and returns access and refresh tokens"
+    },
+    {
+      "endpoint": "/logout",
+      "method": "POST",
+      "description": "Logs out a user by deleting their tokens"
+    },
+    {
+      "endpoint": "/notes",
+      "method": "POST",
+      "description": "Creates a new note"
+    },
+    {
+      "endpoint": "/notes",
+      "method": "GET",
+      "description": "Retrieves all notes for the authenticated user"
+    },
+    {
+      "endpoint": "/notes/{note_id}",
+      "method": "GET",
+      "description": "Retrieves a specific note by ID"
+    },
+    {
+      "endpoint": "/notes/{note_id}",
+      "method": "PUT",
+      "description": "Updates a note by ID"
+    },
+    {
+      "endpoint": "/notes/{note_id}",
+      "method": "DELETE",
+      "description": "Deletes a note by ID"
+    }
+    // ... add other API endpoints and their descriptions
+  ],
+  "notes": [
+    "This project uses PDO for database interactions.",
+    "Password hashing is implemented using bcrypt.",
+    "Token-based authentication is used for security.",
+    "Input validation and sanitization are performed to prevent vulnerabilities."
+  ]
+}
