@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($noteId) {
             sendJsonResponse(201, ['status' => 'success', 'message' => 'Note deleted successfully', 'note_id' => $noteId]);
         } else {
-            sendJsonResponse(500, ['status' => 'error', 'message' => 'Failed to delete note']);
+            sendJsonResponse(500, ['status' => 'error', 'message' => 'Failed. Either no notes found or This Notes could be created by another user']);
         }
     } else {
         sendJsonResponse(400, ['status' => 'error', 'message' => 'Missing title']);

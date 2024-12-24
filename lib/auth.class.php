@@ -86,7 +86,7 @@ class AuthManager extends Database{
                 'type' => $result['type']
             ];
         } else {
-            echo "Invalid Token";
+            // echo "Invalid Token";
             return false; // Invalid or expired token
         }
 

@@ -35,22 +35,15 @@ $tokenType = $tokenValid['type'];
 if ($tokenType !== 'access') {
     sendJsonResponse(403, ['status' => 'error', 'message' => 'Invalid token type for this operation.']);
 }
-// API code to get a specific note
+
+// API code to fetch all notes for the authenticated user
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-    // Get the note ID from the request parameters
-    $noteId = $_GET['note_id'] ?? null; 
+    $notes = $notesManager->getAllNotes($userId);
 
-    // Validate the note ID
-    if (empty($noteId) || !is_numeric($noteId)) {
-        sendJsonResponse(400, ['status' => 'error', 'message' => 'Invalid note ID.']);
-    }
-
-    $note = $notesManager->readNotes($userId, $noteId); // Get the note
-
-    if ($note !== false) {
-        sendJsonResponse(200, ['status' => 'success', 'note' => $note]);
+    if ($notes !== false) {
+        sendJsonResponse(200, ['status' => 'success', 'notes' => $notes]); 
     } else {
-        sendJsonResponse(404, ['status' => 'error', 'message' => 'Note not found.']); // 404 Not Found
+        sendJsonResponse(500, ['status' => 'error', 'message' => 'Failed to fetch notes.']);
     }
 } else {
     sendJsonResponse(405, ['status' => 'error', 'message' => 'Method Not Allowed']);

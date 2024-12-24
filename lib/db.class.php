@@ -146,7 +146,7 @@ class Database{
                 $stmt->execute();
                 $result = $stmt->fetch(PDO::FETCH_ASSOC);
             }catch (PDOException $e){
-                echo "Invalid Token";
+                // echo "Invalid Token";
                 echo $e->getMessage();
             }
             if (!$result){
@@ -223,12 +223,76 @@ class Database{
             $stmt->bindValue(':content', $content, PDO::PARAM_STR);
             $stmt->bindValue(':created_at', $createdAt, PDO::PARAM_STR);
             $stmt->execute();
-            // echo "Notes created...";
             return true;
 
         } catch (PDOException $e) {
             echo "Error creating Notes: " . $e->getCode() . $e->getMessage();
             return false;
+        }
+    }
+
+
+    protected function noteUpdate($userId, $noteId, $newTitle, $newContent) {
+        try {
+            // 1. Check if the note exists and belongs to the user
+            $stmt = $this->db->prepare("SELECT id FROM notes WHERE id = :note_id AND user_id = :user_id");
+            $stmt->bindValue(':note_id', $noteId, PDO::PARAM_INT);
+            $stmt->bindValue(':user_id', $userId, PDO::PARAM_INT);
+            $stmt->execute();
+            $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    
+            if (!$result) {
+                echo "Note not found or doesn't belong to the user.";
+                return false;
+            }
+    
+            // 2. Update the note with the new title and content
+            $stmt = $this->db->prepare("UPDATE notes SET title = :title, content = :content WHERE id = :note_id");
+            $stmt->bindValue(':title', $newTitle, PDO::PARAM_STR);
+            $stmt->bindValue(':content', $newContent, PDO::PARAM_STR);
+            $stmt->bindValue(':note_id', $noteId, PDO::PARAM_INT);
+            $stmt->execute();
+    
+            // echo "Note updated successfully.";
+            return true;
+    
+        } catch (PDOException $e) {
+            echo "Error updating note: " . $e->getMessage();
+            return false;
+        }
+    }
+
+
+    public function noteRead($userId, $noteId) {
+        try {
+            $stmt = $this->db->prepare("SELECT * FROM notes WHERE id = :note_id AND user_id = :user_id");
+            $stmt->bindValue(':note_id', $noteId, PDO::PARAM_INT);
+            $stmt->bindValue(':user_id', $userId, PDO::PARAM_INT);
+            $stmt->execute();
+            $note = $stmt->fetch(PDO::FETCH_ASSOC);
+
+            return $note; // Return the note data as an associative array
+
+        } catch (PDOException $e) {
+            // Handle database error
+            error_log("Error fetching note: " . $e->getMessage());
+            return false; // Or throw an exception
+        }
+    }
+
+    public function noteListAll($userId){
+        try {
+            $stmt = $this->db->prepare("SELECT * FROM notes WHERE user_id = :user_id");
+            $stmt->bindValue(':user_id', $userId, PDO::PARAM_INT);
+            $stmt->execute();
+            $notes = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    
+            return $notes; // Return an array of notes (associative arrays)
+    
+        } catch (PDOException $e) {
+            // Handle database error (e.g., log the error)
+            error_log("Error fetching notes: " . $e->getMessage());
+            return false; // Or throw an exception
         }
     }
 
@@ -300,7 +364,6 @@ class Database{
     // }
    
     protected function noteDelete($userId, $title) {
-        echo "$title";
         try {
             try {
                 $stmt = $this->db->prepare("SELECT * FROM notes WHERE user_id=:user_id");
@@ -314,8 +377,8 @@ class Database{
                 foreach ($result as $note) {
                     // $tit = $note['title'];
                     if ($note['title'] == $title) {
-                        $noteToDelete = $note; 
-                        print_r($noteToDelete); 
+                        $noteToDelete = $note;
+                        // print_r($noteToDelete);
                         break;
                     }
                 }
@@ -323,28 +386,27 @@ class Database{
                 echo "Invalid User";
                 echo $e->getMessage();
             }
-    
+            
             if (!$result) {
                 echo "No Notes found for this user.";
                 return false;
             }
     
             // Check if a note to delete was found
-            if ($noteToDelete) { 
+            if ($noteToDelete) {
                 try {
                     echo "True";
                     // Use the ID of the found note to delete
                     $stmt = $this->db->prepare("DELETE FROM notes WHERE id = :id"); 
                     $stmt->bindValue(':id', $noteToDelete['id'], PDO::PARAM_INT); 
                     $stmt->execute();
-                    echo "<br> Note has been deleted.";
                     return true;
                 } catch (PDOException $e) {
                     echo "False";
                     echo $e->getMessage();
                 }
             } else {
-                echo "Deletion failed! Either no notes found or This Notes could be created by another user!!";
+                // echo "Deletion failed! Either no notes found or This Notes could be created by another user!!";
                 return false;
             }
     
