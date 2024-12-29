@@ -1,5 +1,7 @@
 <?php
 
+define('*JusticeDelayedIsJusticeDenied@1', true); // Define the constant
+
 require_once '../../../lib/notes.class.php';
 require_once '../../../lib/auth.class.php'; 
 
@@ -47,8 +49,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // $data = json_decode(file_get_contents('php://input'), true);
     $title = $_POST['title'] ?? ''; // Get the title from form data
     $content = $_POST['content'] ?? ''; // Get the content from form data
-    // echo "Title is: $title";
-    // echo "Content is: $content";
 
 
     if (isset($title) && isset($content)) {

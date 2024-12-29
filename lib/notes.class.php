@@ -1,4 +1,8 @@
 <?php
+// Include guard
+if (!defined('*JusticeDelayedIsJusticeDenied@1')) {
+    die('Direct access is not allowed.');
+}
 
 require_once("db.class.php");
 

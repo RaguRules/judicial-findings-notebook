@@ -18,10 +18,11 @@ class AuthManager extends Database{
 
         $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-        $results = $this->register($username, $hashedPassword);
+        return $results = $this->register($username, $hashedPassword);
 
        if($results){
-            echo "You have successfully registered. Go to log in";
+            // echo "You have successfully registered. Go to log in";
+            // return true;
        }
     }
 

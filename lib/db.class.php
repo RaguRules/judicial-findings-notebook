@@ -84,8 +84,8 @@ class Database{
 
         } catch (PDOException $e) {
             if($e->getCode()==23000){ //Error code for Integrity constraint violation
-                echo "This username is already taken. Choose a different username!";
-                return false;
+                // echo "This username is already taken. Choose a different username!";
+                return -1;
             }else{
                 echo "Error: " . $e->getCode() . $e->getMessage();
                 return false;

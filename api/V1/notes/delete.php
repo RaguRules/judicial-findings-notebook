@@ -1,10 +1,13 @@
 <?php
 
+define('*JusticeDelayedIsJusticeDenied@1', true); // Define the constant
+
 require_once '../../../lib/notes.class.php';
 require_once '../../../lib/auth.class.php'; 
 
 $notesManager = new NotesManager();
 $authManager = new AuthManager();
+
 
 // Function to send JSON response with status code
 function sendJsonResponse($statusCode, $data = []) {

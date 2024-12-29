@@ -1,7 +1,10 @@
 <?php
 
+define('*JusticeDelayedIsJusticeDenied@1', true); // Define the constant
+
 require_once '../../../lib/notes.class.php';
 require_once '../../../lib/auth.class.php';
+
 
 $notesManager = new NotesManager();
 $authManager = new AuthManager();
@@ -45,6 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         sendJsonResponse(400, ['status' => 'error', 'message' => 'Invalid note ID.']);
     }
 
+    // echo "am working";
     $note = $notesManager->readNotes($userId, $noteId); // Get the note
 
     if ($note !== false) {
