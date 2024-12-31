@@ -126,31 +126,46 @@
                 // 6. Process the response
                 $responseData = json_decode($response, true); // Assuming the API returns JSON data
 
-                foreach ($responseData['notes'] as $note) {
-                    $shortContent = substr($note['content'], 0, 100);
-                    echo <<<EOT
-                    <div class="col-md-4 single-note-item all-category note-important">
-                        <div class="card card-body">
-                            <span class="side-stick"></span>
-                            <h5 class="note-title text-truncate w-75 mb-0" data-noteheading="Launch new template">
-                                {$note['title']} <i class="point fa fa-circle ml-1 font-10"></i> 
-                            </h5>
-                            <p class="note-date font-12 text-muted">{$note['created_at']}</p> 
-                            <div class="note-content">
-                                <p class="note-inner-content text-muted" data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis.">
-                                    {$shortContent} 
-                                </p>
+                if ($responseData && is_array($responseData) && isset($responseData['notes'])) { 
+
+                    $notes = $responseData['notes'];
+                
+                    foreach ($responseData['notes'] as $note) {
+                        $shortContent = substr($note['content'], 0, 100);
+                        echo <<<EOT
+                        <div class="col-md-4 single-note-item all-category note-important">
+                            <div class="card card-body">
+                                <span class="side-stick"></span>
+                                <h5 class="note-title text-truncate w-75 mb-0" data-noteheading="Launch new template">
+                                    {$note['title']} <i class="point fa fa-circle ml-1 font-10"></i> 
+                                </h5>
+                                <p class="note-date font-12 text-muted">{$note['created_at']}</p> 
+                                <div class="note-content">
+                                    <p class="note-inner-content text-muted" data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis.">
+                                        {$shortContent} 
+                                    </p>
+                                </div>
+                            <!--<div class="d-flex align-items-center justify-content-between"> -->
+                            <div class="d-flex align-items-start"> 
+                                <button type="button" class="btn btn-sm btn-success view-note-btn rounded-pill me-2" data-bs-toggle="modal" data-bs-target="#viewNoteModal" data-note-id="{$note['id']}">View</button>
+                                <button class="btn btn-sm btn-primary edit-note-btn rounded-pill" data-note-id="{$note['id']}">Edit</button>
+                                <button class="btn btn-sm btn-danger delete-note-btn rounded-pill" data-note-id="{$note['id']}">Delete</button>
                             </div>
-                        <!--<div class="d-flex align-items-center justify-content-between"> -->
-                        <div class="d-flex align-items-start"> 
-                            <button type="button" class="btn btn-sm btn-success view-note-btn rounded-pill me-2" data-bs-toggle="modal" data-bs-target="#viewNoteModal" data-note-id="{$note['id']}">View</button>
-                            <button class="btn btn-sm btn-primary edit-note-btn rounded-pill" data-note-id="{$note['id']}">Edit</button>
-                            <button class="btn btn-sm btn-danger delete-note-btn rounded-pill" data-note-id="{$note['id']}">Delete</button>
+                            </div>
                         </div>
-                        </div>
-                    </div>
-                    EOT;
+                        EOT;
+                    }
+                
+                }else {
+                    // Handle the case where the API response is invalid or doesn't contain notes
+                    echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <h4 class="alert-heading">No journals found !</h4> 
+                        <p>Let\'s start with creating new Journal.</p>
+                        <p>If you have existing journals, please log in again to see them.</p>
+                    </div>';
                 }
+
+                
                 ?>
 
                 <!-- Empty Note Item for Layout -->
@@ -208,7 +223,7 @@
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content border-0">
                     <div class="modal-header bg-info text-white">
-                        <h5 class="modal-title text-white">Add Notes2</h5>
+                        <h5 class="modal-title text-white">Create a Journal</h5>
                         <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">×</span>
                         </button>
@@ -220,13 +235,13 @@
                                     <div class="row">
                                         <div class="col-md-12 mb-3">
                                             <div class="note-title">
-                                                <label>Note Title2</label>
+                                                <!-- <label>Note Title2</label> -->
                                                 <input type="text" id="note-has-title" class="form-control" minlength="15" placeholder="Title">
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="note-description">
-                                                <label>Note Description2</label>
+                                                <!-- <label>Note Description2</label> -->
                                                 <textarea id="note-has-description" class="form-control" minlength="60" placeholder="Description" rows="25"></textarea>
                                             </div>
                                         </div>

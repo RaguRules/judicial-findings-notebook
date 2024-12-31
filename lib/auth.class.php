@@ -1,230 +1,200 @@
 <?php
 
+// Include guard to prevent direct access to the file.
+if (!defined('*JusticeDelayedIsJusticeDenied@1')) {
+    die('Direct access is not allowed.');
+}
+
 require_once("db.class.php");
 
-class AuthManager extends Database{
+/**
+ * AuthManager class for user authentication and token management.
+ */
+class AuthManager extends Database {
 
-    public function __construct(){
+    /**
+     * AuthManager constructor.
+     */
+    public function __construct() {
         parent::__construct("../../../model/data.db");
     }
 
-
-    public function getUser(){
-        return $this->username;
-    }
-
-
+    /**
+     * Signs up a new user.
+     *
+     * @param string $username The username for the new user.
+     * @param string $password The password for the new user.
+     * @return mixed Returns true on successful registration, -1 if the username is taken, false on other errors.
+     */
     public function signup($username, $password) {
+        // 1. Input Validation:
+        $username = trim($username);
+        $password = trim($password);
 
+        if (empty($username) || empty($password)) {
+            return ['status' => 'error', 'message' => 'Username and password are required.'];
+        }
+
+        // Basic username format validation
+        if (!preg_match('/^[a-zA-Z0-9_]+$/', $username)) {
+            return ['status' => 'error', 'message' => 'Invalid username format. Use only alphanumeric characters and underscores.'];
+        }
+
+        // Password strength validation
+        if (strlen($password) < 8 || !preg_match('/[A-Za-z]/', $password) || !preg_match('/[0-9]/', $password)) {
+            return ['status' => 'error', 'message' => 'Password must be at least 8 characters long and contain letters and numbers.'];
+        }
+
+        // 2. Hash the Password:
         $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-        return $results = $this->register($username, $hashedPassword);
+        // 3. Register the User:
+        $result = $this->register($username, $hashedPassword);
 
-       if($results){
-            // echo "You have successfully registered. Go to log in";
-            // return true;
-       }
+        // 4. Handle the Result:
+        if ($result === true) {
+            return ['status' => 'success', 'message' => 'Registration successful.'];
+        } elseif ($result === -1) {
+            return ['status' => 'error', 'message' => 'Username already taken.'];
+        } else {
+            return ['status' => 'error', 'message' => 'Error creating user.'];
+        }
     }
 
+    /**
+     * Logs in a user.
+     *
+     * @param string $username The username of the user.
+     * @param string $password The password of the user.
+     * @return array Returns an array with 'status', 'message', 'access_token', and 'refresh_token' on success, or 'status' and 'message' on failure.
+     */
+    public function login($username, $password) {
+        // 1. Input Validation:
+        $username = trim($username);
+        $password = trim($password);
 
-    public function login($username, $password){
-        
-            $user = $this->signin($username, $password);
+        if (empty($username) || empty($password)) {
+            return ['status' => 'error', 'message' => 'Username and password are required.'];
+        }
 
-            if($user && password_verify($password, $user['password'])){
-                echo "Login Success";
+        // 2. Get User Data:
+        $user = $this->signin($username, $password);
 
-                // post login actions. i.e. Token gen and maintain
-                $this->invalidateTokens($user['id']);
+        // 3. Verify Password and Generate Tokens:
+        if ($user && password_verify($password, $user['password'])) {
 
-                $accessToken = $this->genToken($user['id'], 'access', 30);
-                $refreshToken = $this->genToken($user['id'], 'refresh', 30*24*60);
-                
-                // print_r("[
-                //     'access_token' => $accessToken,
-                //     'refresh_token' => $refreshToken
-                // ]");
+            // Invalidate existing tokens
+            $this->invalidateTokens($user['id']);
 
-                return [
-                    'access_token' => $accessToken,
-                    'refresh_token' => $refreshToken
-                ];
+            // Generate new tokens
+            $accessToken = $this->genToken($user['id'], 'access', 15);  // 15 minutes for access token
+            $refreshToken = $this->genToken($user['id'], 'refresh', 30 * 24 * 60); // 30 days for refresh token
 
-            }else{
-                echo "Invalid username/ password";
-            }
+            // 4. Return Success with Tokens:
+            return [
+                'status' => 'success',
+                'message' => 'Login successful.',
+                'access_token' => $accessToken,
+                'refresh_token' => $refreshToken
+            ];
+        } else {
+            return ['status' => 'error', 'message' => 'Invalid username or password.'];
+        }
     }
 
-
-    public function logout($accessToken){
-        $this->deleteToken($accessToken);
+    /**
+     * Logs out a user by deleting their access token.
+     *
+     * @param string $accessToken The access token to delete.
+     * @return array Returns an array with 'status' and 'message'.
+     */
+    public function logout($accessToken) {
+        if ($this->deleteToken($accessToken)) {
+            return ['status' => 'success', 'message' => 'Logged out successfully.'];
+        } else {
+            return ['status' => 'error', 'message' => 'Error during logout.'];
+        }
     }
 
-
-    public function genToken($userId, $tokenType, $expiryMinutes){
-
-        $token = bin2hex(random_bytes(32));
-
+    /**
+     * Generates a cryptographically secure random token.
+     *
+     * @param int $userId The ID of the user the token is associated with.
+     * @param string $tokenType The type of token ('access' or 'refresh').
+     * @param int $expiryMinutes The token's expiration time in minutes.
+     * @return mixed Returns the generated token on success, false on failure.
+     */
+    public function genToken($userId, $tokenType, $expiryMinutes) {
+        $token = bin2hex(random_bytes(32)); // Generate a cryptographically secure token
         $created = date("Y-m-d H:i:s");
         $expiry = date("Y-m-d H:i:s", strtotime("+$expiryMinutes minutes"));
 
         return $this->writeTokensOnDb($userId, $token, $tokenType, $created, $expiry);
     }
 
+     /**
+     * Refreshes an access token using a refresh token.
+     *
+     * @param string $refreshToken The refresh token.
+     * @return array Returns an array with 'status', 'message', and 'access_token' on success, or 'status' and 'message' on failure.
+     */
+    public function refreshAccessToken($refreshToken) {
+        // 1. Get Token Data and Validate:
+        $tokenData = $this->getTokenData($refreshToken); 
 
-    public function refreshAccessToken($refreshToken){
-        $this->refreshingAccessToken($refreshToken);
+        if (!$tokenData || $tokenData['type'] !== 'refresh') {
+            return ['status' => 'error', 'message' => 'Invalid refresh token.'];
+        }
+
+        // 2. Check Expiry:
+        if (strtotime($tokenData['expires_at']) < time()) {
+            return ['status' => 'error', 'message' => 'Expired refresh token.'];
+        }
+
+        // 3. Invalidate Old Access Token:
+        $this->invalidateAccessTokenOnly($tokenData['user_id'], $tokenData['access_token_to_be_invalidated']); // Use 'access_token_to_be_invalidated'
+
+        // 4. Generate New Access Token:
+        $newAccessToken = $this->genToken($tokenData['user_id'], 'access', 15); // 15 minutes
+
+        if ($newAccessToken) {
+            // 5. [Optional] Implement Refresh Token Rotation Here
+
+            return [
+                'status' => 'success',
+                'message' => 'Access token refreshed.',
+                'access_token' => $newAccessToken
+            ];
+        } else {
+            return ['status' => 'error', 'message' => 'Failed to generate new access token.'];
+        }
     }
 
-
+    /**
+     * Validates a given token.
+     *
+     * @param string $token The token to validate.
+     * @return mixed Returns an array with 'user_id' and 'type' if the token is valid, false otherwise.
+     */
     public function validateToken($token) {
-        
         $result = $this->isValidateToken($token);
-
-        if ($result && $result['expires_at'] > date('Y-m-d H:i:s')) {
+    
+        if ($result === -1) {
             return [
+                'status' => 'expired',
+                'message' => 'Access token is expired.'
+            ];
+        } elseif ($result) {
+            return [
+                'status' => 'success',
+                'message' => 'Token is valid.',
                 'user_id' => $result['user_id'],
                 'type' => $result['type']
             ];
         } else {
-            // echo "Invalid Token";
-            return false; // Invalid or expired token
+            return ['status' => 'error', 'message' => 'Invalid access token.'];
         }
-
     }
-
 }
-
-
-
-
-
-// require_once("db.class.php");
-
-// class AuthManager{
-
-
-//     private $db;
-
-
-//     public function __construct($username, $password){
-//         $this->username = $username;
-//         $this->password = $password;
-//         echo "hi";
-//         $this->db = new Database();
-//         $this->dbConnection = $this->db->getConn();
-//     }
-
-
-//     public function validateInput($input, $type) {
-
-//         $input = trim($input);
-
-//         if (empty($input)){
-//             return "Password, and Username are required!";
-//         }
-//         switch ($type) {
-//             case 'username':
-//                 $input = htmlspecialchars($input, ENT_QUOTES, 'UTF-8');
-//                 if (!preg_match('/^[a-zA-Z0-9_]+$/', $input)) {
-//                     return "Invalid username format. Please use only alphanumeric characters and underscores.";
-//                 }
-//                 break;
-
-//             case 'password':
-//                 if (strlen($input) < 8 || !preg_match('/[A-Za-z]/', $input) || !preg_match('/[0-9]/', $input)) {
-//                 // if (strlen($input) < 8 || !preg_match('/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$/', $input)) {
-//                     // return "Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, and one number.";
-//                     return "Password must be at least 8 characters long and contain both letters and numbers.";
-//                 }
-//                 break;
-
-//             default:
-//                 return "Invalid input type.";
-//         }
-
-//         return true; // Input is valid
-//     }
-
-
-//     // By accepting the password as a parameter, it can be used to hash any password, not just the one associated with the current AuthManager object.
-//     // The hashPassword() method should only be concerned with hashing the password it receives, not with accessing or modifying the internal state ($this->password) of the AuthManager object.
-//     public function hashPassword($password){
-
-//         // 1. Generate a strong random salt
-//         $salt = random_bytes(16);
-
-//         // 2. Hash the password with the salt using a secure hashing algorithm
-//         $hashedPassword = password_hash($password . $salt, PASSWORD_DEFAULT);
-
-//         // 3. Return the salt and hashed password as a combined string
-//         return base64_encode($salt) . ':' . $hashedPassword;
-//     }
-
-
-//     public function generateAccessToken(){
-
-//     }
-
-
-//     public function generateRefreshtoken(){
-
-//     }
-
-
-//     public function signup($username, $password){
-//         //save username, hashed password in user database
-//         // 1. Validate input (username and password)
-//         $validUserName = $this->validateInput($username,'username');
-//         $validPassword = $this->validateInput($password,'password');
-
-//         if($validUserName!=true){
-//             return $validUserName;
-//         }if($validPassword!=true){
-//             return $validPassword;
-//         }
-
-//         // 2. Hash the password
-//         // echo $validPassword."lol";
-//         // echo $validUserName;
-//         // echo "222";
-//         $hashedPassword = $this->hashPassword($password);
-        
-     
-//         // 3. Prepare the SQL statement
-//         $stmt = $this->dbConnection->prepare("INSERT INTO users (username, password) VALUES (:username, :password)");
-//         $stmt->bindValue(':username', $username, SQLITE3_TEXT); 
-//         $stmt->bindValue(':password', $hashedPassword, SQLITE3_TEXT);
-
-//         // 4. Execute the statement and handle errors
-//         try{
-//             if ($stmt->execute()) {
-//                 return true; // Signup successful
-//             } else {
-//                 // Handle database error (e.g., duplicate username)
-//                 return "Error creating user. Please try different username.";
-//             }
-//         }catch(Exception $e){
-//             // Log the exception and return a generic error message
-//             error_log("Signup error: " . $e->getMessage());
-//             return "An error occurred during signup.";
-//         }
-//     }
-
-
-//     public function getUser($id){
-
-//     }
-
-
-//     public function login($username, $password){
-
-//     }
-
-
-//     public function logout(){
-    
-//     }
-// }
 
 ?>
