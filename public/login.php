@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome Back</title>
 
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="css/style.css">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <div class="main">
+    <div class="main" style="padding-top: 50px;">
         <section class="sign-in">
             <div class="container">
             <?php
@@ -47,6 +43,7 @@
 
                     </div>
                 </div>
+                <p style="text-align: center; font-style: italic; font-weight: bold;">This system was developed in 2025 by Courts' Interpreter Srirajeswaran Raguraj. For any bugs/ errors, please contact: +(94)777958841.</p>
             </div>
         </section>
     </div>
@@ -95,51 +92,18 @@
         }
 
         // Function to validate the access token
-        // function validateAccessToken(accessToken) {
-        //     $.ajax({
-        //         url: 'http://localhost/api/V1/auth/validatetoken.php',
-        //         type: 'POST',
-        //         contentType: 'application/json',
-        //         data: JSON.stringify({token: accessToken }),
-        //         success: function(response, textStatus, xhr) { // Add 'textStatus' and 'xhr' parameters
-        //             // Check the actual status code
-        //             if (xhr.status === 200 && response.status === 'success') {
-        //                 // Valid token, redirect to homepage
-        //                 window.location.href = "http://localhost/public/fe4.php";
-        //             } else if (xhr.status === 401 && response.status === 'expired') {
-        //                 // Token is expired, attempt to refresh
-        //                 console.log("Access token expired, attempting to refresh...");
-        //                 var refreshToken = getCookie('refresh_token');
-        //                 if (refreshToken) {
-        //                     refreshAccessToken(refreshToken);
-        //                 } else {
-        //                     console.log("No refresh token available, proceed with login");
-        //                 }
-        //             } else {
-        //                 // Invalid token or other error, proceed with login form display
-        //                 console.log("Invalid or other error, proceed with login");
-        //             }
-        //         },
-        //         error: function(xhr, status, error) {
-        //             // Handle actual errors (e.g., network errors)
-        //             console.error("Error validating token:", error);
-        //             // Proceed with login form display on error
-        //         }
-        //     });
-        // }
         function validateAccessToken(accessToken) {
             $.ajax({
-                url: 'http://localhost/api/V1/auth/validatetoken.php', // Replace with your actual API endpoint
+                url: 'http://localhost/api/V1/auth/validatetoken.php',
                 type: 'POST',
                 contentType: 'application/json',
-                // data: JSON.stringify({"token":accessToken}), // Send access_token without quotes
                 data: JSON.stringify({ "token": accessToken }),
                 // jQuery and the server responds with a status code like 401 Unauthorized, it’s treated as an error response. 
                 // For Expired token, API server returns 401 which will be considered as error, so we read, and do the needful from xhr in error block.
                 success: function(response) {
                     if (response.status === 'success') {
                         // Valid token, redirect to homepage
-                        window.location.href = "http://localhost/public/fe4.php";
+                        window.location.href = "http://localhost/public/home.php";
                     } else {
                             console.log("No useful token available, proceed with login");
                     }
@@ -157,7 +121,6 @@
                     } else {
                         // Handle other errors (network issues, server errors)
                         console.error("Error validating token:", error);
-                        alert("An error occurred. Please try again.");
                     }
                 }
             });
@@ -174,10 +137,8 @@
                     if (response.status === 'success') {
                         // Update the access token and redirect
                         localStorage.setItem('access_token', response.access_token);
-                        window.location.href = "http://localhost/public/fe4.php";
+                        window.location.href = "http://localhost/public/home.php";
                     } else {
-                        // Invalid refresh token, proceed with login form display
-                        alert ("dmnn2");
                         console.log("Invalid refresh token, proceed with login");
                     }
                 },
@@ -221,12 +182,12 @@
                             var accessToken = xhr.getResponseHeader('X-Access-Token');
                             var refreshToken = xhr.getResponseHeader('X-Refresh-Token');
 
-                            // Store tokens
+                            // Store tokens, & set Cookies
                             localStorage.setItem('access_token', accessToken);
                             setCookie('refresh_token', refreshToken, 30);
 
                             // Redirect to the home page
-                            window.location.href = "http://localhost/public/fe4.php";
+                            window.location.href = "http://localhost/public/home.php";
                         } else {
                             // Display error message
                             $("#error-message").html('<div class="alert alert-danger alert-dismissible fade show" role="alert">' +
@@ -237,7 +198,7 @@
                     },
                     error: function(xhr, status, error) {
                         console.error("Login error:", error, xhr, status);
-                        $("#error-message").html('<div class="alert alert-danger" role="alert">An error occurred during login.</div>');
+                        $("#error-message").html('<div class="alert alert-danger" role="alert">An error occurred during login. Double check your Username/ Password</div>');
                     }
                 });
             });

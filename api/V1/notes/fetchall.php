@@ -19,8 +19,7 @@ function sendJsonResponse($statusCode, $data = []) {
 // API authentication and authorization logic 
 $headers = apache_request_headers();
 $authorizationHeader = $headers['Authorization'] ?? '';
-// $accessToken = str_replace('Bearer ', '', $authorizationHeader);
-$accessToken='b9214b682dd2de9e695083ffc51b71302cac6a1aa52d740c84ff1122a305e534';
+$accessToken = str_replace('Bearer ', '', $authorizationHeader);
 
 if (empty($accessToken)) {
     sendJsonResponse(401, ['status' => 'error', 'message' => 'Authorization header missing.']);
@@ -28,8 +27,12 @@ if (empty($accessToken)) {
 
 $tokenValid = $authManager->validateToken($accessToken);
 
-if (!$tokenValid) {
+if ($tokenValid['status']=='expired') {
     sendJsonResponse(401, ['status' => 'error', 'message' => 'Invalid or expired access token.']);
+}
+
+if ($tokenValid['status']=='error') {
+    sendJsonResponse(401, ['status' => 'error', 'message' => 'Invalid access token.']);
 }
 
 $userId = $tokenValid['user_id'];

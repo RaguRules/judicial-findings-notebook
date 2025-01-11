@@ -1,5 +1,12 @@
 <?php
 
+// Include guard to prevent direct access to the file.
+if (!defined('*JusticeDelayedIsJusticeDenied@1')) {
+    die('Direct access is not allowed.');
+}
+
+require_once __DIR__ . '/config.php';
+
 /**
  * Database class using PDO for SQLite.
  */
@@ -18,7 +25,9 @@ class Database {
      */
     protected function __construct($dbpath) {
         try {
-            $this->db = new PDO("sqlite:" . $dbpath);
+            // $this->db = new PDO("sqlite:" . $dbpath);
+            // $this->db = new PDO("sqlite:" . __DIR__ . "/../model/data.db");    //still this Relative Path in Class Approach (Less Robust)
+            $this->db = new PDO("sqlite:" . DB_PATH);    //Centralized config.php this is good Approach
             $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $this->db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
             $this->createTables();
@@ -429,25 +438,29 @@ class Database {
      * @param string $title The title of the note to delete.
      * @return bool True on success, false on failure.
      */
-    protected function noteDelete($userId, $title) {
+    protected function noteDelete($userId, $noteId) {
         try {
-            // Find the note's ID based on the title and user_id
-            $stmt = $this->db->prepare("SELECT id FROM notes WHERE user_id = :user_id AND title = :title");
-            $stmt->bindValue(':user_id', $userId, PDO::PARAM_INT);
-            $stmt->bindValue(':title', $title, PDO::PARAM_STR);
+            // Check if the note exists and belongs to the user
+            $stmt = $this->db->prepare("SELECT COUNT(*) FROM notes WHERE id = :noteId AND user_id = :userId");
+            $stmt->bindValue(':noteId', $noteId, PDO::PARAM_INT);
+            $stmt->bindValue(':userId', $userId, PDO::PARAM_INT);
             $stmt->execute();
-            $note = $stmt->fetch();
 
-            if (!$note) {
+            if ($stmt->fetchColumn() === 0) {
+                // Note not found or doesn't belong to the user
+                error_log("Note not found or user not authorized to delete. Note ID: " . $noteId . ", User ID: " . $userId);
                 return false;
             }
 
-            // Delete the note using its ID
-            $stmt = $this->db->prepare("DELETE FROM notes WHERE id = :id");
-            $stmt->bindValue(':id', $note['id'], PDO::PARAM_INT);
+            // Delete the note using its ID and ensuring it belongs to the user
+            $stmt = $this->db->prepare("DELETE FROM notes WHERE id = :noteId AND user_id = :userId");
+            $stmt->bindValue(':noteId', $noteId, PDO::PARAM_INT);
+            $stmt->bindValue(':userId', $userId, PDO::PARAM_INT);
             $stmt->execute();
 
-            return true;
+            // Check if any rows were affected (note was deleted)
+            return $stmt->rowCount() > 0;
+
         } catch (PDOException $e) {
             error_log("Error deleting note: " . $e->getMessage());
             return false;

@@ -44,26 +44,48 @@ if ($tokenType !== 'access') {
 }
 
 
-// Now you have the $userId for the authenticated user.
-// API code to delete the note
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // $data = json_decode(file_get_contents('php://input'), true);
-    $title = $_POST['title'] ?? ''; // Get the title from form data
-
-
-    if (isset($title)) {
-        $noteId = $notesManager->deleteNotes($userId, $title);
-
-        if ($noteId) {
-            sendJsonResponse(201, ['status' => 'success', 'message' => 'Note deleted successfully', 'note_id' => $noteId]);
-        } else {
-            sendJsonResponse(500, ['status' => 'error', 'message' => 'Failed. Either no notes found or This Notes could be created by another user']);
-        }
-    } else {
-        sendJsonResponse(400, ['status' => 'error', 'message' => 'Missing title']);
-    }
-} else {
+if (!$_SERVER['REQUEST_METHOD'] === 'POST') {
     sendJsonResponse(405, ['status' => 'error', 'message' => 'Method Not Allowed']);
+}
+
+
+$contentType = isset($_SERVER["CONTENT_TYPE"]) ? trim($_SERVER["CONTENT_TYPE"]) : '';
+$noteId = null;
+
+// Handle different content types
+if (strcasecmp($contentType, 'application/json') === 0) {
+    // Handle JSON data
+    $inputData = file_get_contents('php://input');
+    $decodedData = json_decode($inputData, true);
+
+    if ($decodedData === null) {
+        sendJsonResponse(400, ['status' => 'error', 'message' => 'Invalid JSON data.']);
+    }
+
+    $noteId = $decodedData['note_id'] ?? null;
+
+} elseif (strpos($contentType, 'application/x-www-form-urlencoded') === 0) {
+    // Handle form data
+    $noteId = $_POST['note_id'] ?? null;
+} else {
+    sendJsonResponse(415, ['status' => 'error', 'message' => 'Unsupported Content-Type.']);
+}
+
+// Validate note ID
+if (empty($noteId) || !is_numeric($noteId)) {
+    sendJsonResponse(400, ['status' => 'error', 'message' => 'Invalid or missing note ID.']);
+}
+
+$noteId = (int)$noteId; // Convert to integer after validation
+
+
+// Delete the note
+$success = $notesManager->deleteNotes($userId, $noteId);
+
+if ($success) {
+    sendJsonResponse(200, ['status' => 'success', 'message' => 'Note deleted successfully.']);
+} else {
+    sendJsonResponse(500, ['status' => 'error', 'message' => 'Failed to delete note.']);
 }
 
 

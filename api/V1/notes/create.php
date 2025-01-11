@@ -27,10 +27,14 @@ if (empty($accessToken)) {
 }
 
 // 2. Validate the access token and extract user_id
-$tokenValid = $authManager->validateToken($accessToken); // Assuming you have a validateToken() method in AuthManager
+$tokenValid = $authManager->validateToken($accessToken);
 
-if (!$tokenValid) {
-    sendJsonResponse(401, ['status' => 'error', 'message' => 'Invalid or expired access token.']); 
+if ($tokenValid['status']=='expired') {
+    sendJsonResponse(401, ['status' => 'error', 'message' => 'Invalid or expired access token.']);
+}
+
+if ($tokenValid['status']=='error') {
+    sendJsonResponse(401, ['status' => 'error', 'message' => 'Invalid access token.']);
 }
 
 // Assuming your validateToken() method returns an array with user_id and token type
@@ -45,25 +49,50 @@ if ($tokenType !== 'access') {
 
 // Now you have the $userId for the authenticated user.
 // API code to create the note
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // $data = json_decode(file_get_contents('php://input'), true);
-    $title = $_POST['title'] ?? ''; // Get the title from form data
-    $content = $_POST['content'] ?? ''; // Get the content from form data
-
-
-    if (isset($title) && isset($content)) {
-        $noteId = $notesManager->createNotes($userId, $title, $content);
-
-        if ($noteId) {
-            sendJsonResponse(201, ['status' => 'success', 'message' => 'Note created successfully', 'note_id' => $noteId]);
-        } else {
-            sendJsonResponse(500, ['status' => 'error', 'message' => 'Failed to create note']);
-        }
-    } else {
-        sendJsonResponse(400, ['status' => 'error', 'message' => 'Missing title or content']);
-    }
-} else {
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     sendJsonResponse(405, ['status' => 'error', 'message' => 'Method Not Allowed']);
+}
+
+$contentType = isset($_SERVER["CONTENT_TYPE"]) ? trim($_SERVER["CONTENT_TYPE"]) : '';
+
+$title = null;
+$content = null;
+
+
+// --- Handle JSON data ---
+if (strcasecmp($contentType, 'application/json') === 0) {
+    $inputData = file_get_contents('php://input');
+    $decodedData = json_decode($inputData, true);
+
+    if ($decodedData === null) {
+        sendJsonResponse(400, ['status' => 'error', 'message' => 'Invalid JSON data.']);
+    }
+    $title = $decodedData['title'] ?? '';
+    $content = $decodedData['content'] ?? '';
+
+// --- Handle Form data ---
+} elseif (strpos($contentType, 'application/x-www-form-urlencoded') === 0 || strpos($contentType, 'multipart/form-data') === 0) {
+    $title = $_POST['title'] ?? '';
+    $content = $_POST['content'] ?? '';
+
+} else {
+    sendJsonResponse(415, ['status' => 'error', 'message' => 'Unsupported Content-Type.']);
+}
+
+if (empty($title) || empty($content)) {
+    sendJsonResponse(400, ['status' => 'error', 'message' => 'Title and content are required.']);
+}
+
+// --- Sanitize Input ---
+$title = htmlspecialchars(trim($title), ENT_QUOTES, 'UTF-8');
+$content = htmlspecialchars(trim($content), ENT_QUOTES, 'UTF-8');
+
+$note = $notesManager->createNotes($userId, $title, $content);
+
+if ($note) {
+    sendJsonResponse(201, ['status' => 'success', 'message' => 'Note created successfully', 'note' => $note]);
+} else {
+    sendJsonResponse(500, ['status' => 'error', 'message' => 'Failed to create note']);
 }
 
 

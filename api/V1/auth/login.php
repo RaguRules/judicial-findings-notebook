@@ -44,15 +44,28 @@ $accessToken = str_replace('Bearer ', '', $authorizationHeader);
 // If an access token is provided, validate it
 if ($accessToken) {
     $validationResult = $authManager->validateToken($accessToken);
-    if ($validationResult) {
-      // User is authenticated, proceed with API logic
-      // ... (You can add further logic here if needed, e.g., checking user roles) ...
 
-      // Since this is login.php, if a user is already logged in, we can redirect them.
-      sendJsonResponse(200, ['status' => 'success', 'message' => 'Already logged in', 'user_id' => $validationResult['user_id'], 'type' => $validationResult['type']]);
+    // Directly check the 'status' field
+    if ($validationResult['status'] === 'success') {
+        // User is authenticated, proceed with API logic
+        sendJsonResponse(200, [
+            'status' => 'success',
+            'message' => 'Already logged in',
+            'user_id' => $validationResult['user_id'],
+            'type' => $validationResult['type']
+        ]);
+    } elseif ($validationResult['status'] === 'expired') {
+        // Token is expired
+        sendJsonResponse(401, [
+            'status' => 'expired',
+            'message' => 'Access token is expired.'
+        ]);
     } else {
-      // Invalid access token
-      sendJsonResponse(401, ['status' => 'error', 'message' => 'Invalid access token.']);
+        // Invalid access token (status is 'error')
+        sendJsonResponse(401, [
+            'status' => 'error',
+            'message' => 'Invalid access token.'
+        ]);
     }
 }
 

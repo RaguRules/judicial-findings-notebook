@@ -21,7 +21,6 @@ class NotesManager extends Database {
 
     /**
      * Creates a new note.
-     *
      * @param int $userId The ID of the user creating the note.
      * @param string $title The title of the note.
      * @param string $data The content of the note.
@@ -34,7 +33,6 @@ class NotesManager extends Database {
 
     /**
      * Updates an existing note.
-     *
      * @param int $userId The ID of the user updating the note.
      * @param int $noteId The ID of the note to update.
      * @param string $title The new title of the note.
@@ -47,8 +45,6 @@ class NotesManager extends Database {
     }
 
     /**
-     * Reads a specific note.
-     *
      * @param int $userId The ID of the user who owns the note.
      * @param int $noteId The ID of the note to read.
      * @return mixed The note data as an associative array on success, false on failure.
@@ -59,18 +55,16 @@ class NotesManager extends Database {
 
     /**
      * Deletes a note based on its title and the user it belongs to.
-     *
      * @param int $userId The ID of the user who owns the note.
      * @param string $title The title of the note to delete.
      * @return bool True on success, false on failure.
      */
-    public function deleteNotes($userId, $title) {
-        return $this->noteDelete($userId, $title);
+    public function deleteNotes($userId, $noteId) {
+        return $this->noteDelete($userId, $noteId);
     }
 
     /**
      * Retrieves all notes for a user.
-     *
      * @param int $userId The ID of the user.
      * @return mixed An array of notes (associative arrays) on success, false on failure.
      */

@@ -16,7 +16,10 @@ class AuthManager extends Database {
      * AuthManager constructor.
      */
     public function __construct() {
-        parent::__construct("../../../model/data.db");
+        // parent::__construct("../../../model/data.db");
+        // This will ensure that PHP looks for data.db relative to the current directory of auth.class.php
+        parent::__construct(__DIR__ . "/../model/data.db");
+
     }
 
     /**
