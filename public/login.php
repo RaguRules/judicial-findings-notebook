@@ -21,9 +21,8 @@
                 <div class="signin-content">
                     <div class="signin-image">
                         <figure><img src="images/signin-image.jpg" alt="sign in image"></figure>
-                        <a href="register.php" class="signup-image-link">Create an account</a>
                     </div>
-
+                    
                     <div class="signin-form">
                         <h2 class="form-title">Sign in</h2>
                         <form method="POST" class="register-form" id="login-form">
@@ -36,7 +35,10 @@
                                 <input type="password" name="your_pass" id="your_pass" placeholder="Password"/>
                             </div>
                             <div class="form-group form-button">
-                                <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
+                                <input type="submit" name="signin" id="signin" class="form-submit blue-button" value="Log in"/>
+                                <a href="register.php"> 
+                                    <input type="button" class="form-submit btn-warning" value="Create an account"/> 
+                                </a>
                             </div>
                         </form>
                         <div id="error-message"></div>

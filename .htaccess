@@ -1,57 +1,27 @@
-# Enable the rewrite engine
 RewriteEngine On
 
-# RESTful APIs to create clean and user-friendly URLs
-RewriteRule ^([^/]*)$ index.api.php?rquest=$1 [QSA,L]
+# Redirect root URL to public/home.php
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^$ /index.php [L]
+
 
 # Hide .php extensions
-RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^(.*)$ $1.php [NC,L]
 
-# --------------------------------------------------
-# Caching and compression
-# --------------------------------------------------
-
-# Leverage browser caching for static assets
-<FilesMatch "\.(js|css|png|jpg|jpeg|gif|ico|svg)$">
-    Header set Cache-Control "public, max-age=2592000"  # Cache for 1 month
-</FilesMatch>
-
-# Enable Gzip compression
-<IfModule mod_deflate.c>
-    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript
-</IfModule>
-
-# --------------------------------------------------
-# Security enhancements
-# --------------------------------------------------
-
-# Protect against cross-site scripting (XSS)
-Header set X-XSS-Protection "1; mode=block"
-
-# Enforce HTTPS (if applicable) - **Uncomment if using HTTPS**
-# RewriteCond %{HTTPS} off
-# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-# Block access to sensitive files
-<FilesMatch "\.(htaccess|htpasswd|ini|phps|fla|psd|log)$">
-    Order Allow,Deny
-    Deny from all
-</FilesMatch>
-
-# Prevent hotlinking of images (optional) - **Uncomment and customize if needed**
-# RewriteCond %{HTTP_REFERER} !^$
-# RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?yourdomain.com [NC]
-# RewriteRule \.(jpg|jpeg|png|gif)$ - [NC,F,L]
-
-# --------------------------------------------------
-# Other settings
-# --------------------------------------------------
 
 # Prevent directory listing
 Options -Indexes
 
-# Custom error pages (optional)
-ErrorDocument 404 /error404.php
-ErrorDocument 500 /error500.php
+
+# Prevent directory traversal - Redirect to /public/home.php
+RewriteCond %{REQUEST_URI} !^/public/ [NC]
+RewriteRule ^(.*)$ /public/home.php [L,R=301] 
+
+
+# Block access to sensitive files
+<FilesMatch "\.(htaccess|htpasswd|ini|phps|fla|psd|log|)$">
+	Require all denied 
+</FilesMatch>
+

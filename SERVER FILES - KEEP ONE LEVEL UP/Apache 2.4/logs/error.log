@@ -1,0 +1,901 @@
+The 'Apache2.4' service is restarting.
+Starting the 'Apache2.4' service
+The 'Apache2.4' service is running.
+ly determine the server's fully qualified domain name, using fe80::1cc3:1aa3:3e4b:857d. Set the 'ServerName' directive globally to suppress this message
+[Sat Nov 30 18:20:26.733231 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00455: Apache/2.4.62 (Win64) configured -- resuming normal operations
+[Sat Nov 30 18:20:26.733231 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sat Nov 30 18:20:26.733231 2024] [core:notice] [pid 20236:tid 380] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sat Nov 30 18:20:26.733231 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00418: Parent: Created child process 10132
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::1cc3:1aa3:3e4b:857d. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::1cc3:1aa3:3e4b:857d. Set the 'ServerName' directive globally to suppress this message
+[Sat Nov 30 18:20:28.983238 2024] [mpm_winnt:notice] [pid 10132:tid 400] AH00354: Child: Starting 64 worker threads.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 20236:tid 380] AH00424: Parent: Received restart signal -- Restarting the server.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::1cc3:1aa3:3e4b:857d. Set the 'ServerName' directive globally to suppress this message
+[Sat Nov 30 18:23:43.234665 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00455: Apache/2.4.62 (Win64) configured -- resuming normal operations
+[Sat Nov 30 18:23:43.234665 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sat Nov 30 18:23:43.234665 2024] [core:notice] [pid 20236:tid 380] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sat Nov 30 18:23:43.265895 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00418: Parent: Created child process 3968
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::1cc3:1aa3:3e4b:857d. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::1cc3:1aa3:3e4b:857d. Set the 'ServerName' directive globally to suppress this message
+[Sat Nov 30 18:23:45.485205 2024] [mpm_winnt:notice] [pid 3968:tid 396] AH00354: Child: Starting 64 worker threads.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 20236:tid 380] AH00424: Parent: Received restart signal -- Restarting the server.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::1cc3:1aa3:3e4b:857d. Set the 'ServerName' directive globally to suppress this message
+[Sat Nov 30 18:27:40.862422 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00455: Apache/2.4.62 (Win64) configured -- resuming normal operations
+[Sat Nov 30 18:27:40.862422 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sat Nov 30 18:27:40.862422 2024] [core:notice] [pid 20236:tid 380] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sat Nov 30 18:27:40.878017 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00418: Parent: Created child process 5220
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::1cc3:1aa3:3e4b:857d. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::1cc3:1aa3:3e4b:857d. Set the 'ServerName' directive globally to suppress this message
+[Sat Nov 30 18:27:43.253018 2024] [mpm_winnt:notice] [pid 5220:tid 380] AH00354: Child: Starting 64 worker threads.
+[Sat Nov 30 18:27:44.018884 2024] [authz_core:error] [pid 5220:tid 1192] [client ::1:48944] AH01630: client denied by server configuration: E:/www/WebApp/
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 20236:tid 380] AH00424: Parent: Received restart signal -- Restarting the server.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::1cc3:1aa3:3e4b:857d. Set the 'ServerName' directive globally to suppress this message
+[Sat Nov 30 18:28:08.123596 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00455: Apache/2.4.62 (Win64) configured -- resuming normal operations
+[Sat Nov 30 18:28:08.123596 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sat Nov 30 18:28:08.123596 2024] [core:notice] [pid 20236:tid 380] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sat Nov 30 18:28:08.139216 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00418: Parent: Created child process 13548
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::1cc3:1aa3:3e4b:857d. Set the 'ServerName' directive globally to suppress this message
+[mpm_winnt:notice] [pid 5220:tid 380] AH00364: Child: All worker threads have exited.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::1cc3:1aa3:3e4b:857d. Set the 'ServerName' directive globally to suppress this message
+[Sat Nov 30 18:28:10.743084 2024] [mpm_winnt:notice] [pid 13548:tid 368] AH00354: Child: Starting 64 worker threads.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 20236:tid 380] AH00424: Parent: Received restart signal -- Restarting the server.
+[Sat Nov 30 18:32:33.509965 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00455: Apache/2.4.62 (Win64) configured -- resuming normal operations
+[Sat Nov 30 18:32:33.509965 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sat Nov 30 18:32:33.509965 2024] [core:notice] [pid 20236:tid 380] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sat Nov 30 18:32:33.525595 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00418: Parent: Created child process 14444
+[Sat Nov 30 18:32:35.510362 2024] [mpm_winnt:notice] [pid 13548:tid 368] AH00364: Child: All worker threads have exited.
+[Sat Nov 30 18:32:35.760360 2024] [mpm_winnt:notice] [pid 14444:tid 196] AH00354: Child: Starting 64 worker threads.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 20236:tid 380] AH00424: Parent: Received restart signal -- Restarting the server.
+[Sat Nov 30 18:33:35.018566 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00455: Apache/2.4.62 (Win64) configured -- resuming normal operations
+[Sat Nov 30 18:33:35.018566 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sat Nov 30 18:33:35.018566 2024] [core:notice] [pid 20236:tid 380] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sat Nov 30 18:33:35.034192 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00418: Parent: Created child process 20388
+[Sat Nov 30 18:33:37.362321 2024] [mpm_winnt:notice] [pid 20388:tid 392] AH00354: Child: Starting 64 worker threads.
+[Sat Nov 30 18:33:43.143887 2024] [mpm_winnt:notice] [pid 14444:tid 196] AH00364: Child: All worker threads have exited.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 20236:tid 380] AH00424: Parent: Received restart signal -- Restarting the server.
+[Sat Nov 30 18:54:10.771833 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00455: Apache/2.4.62 (Win64) configured -- resuming normal operations
+[Sat Nov 30 18:54:10.771833 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sat Nov 30 18:54:10.771833 2024] [core:notice] [pid 20236:tid 380] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sat Nov 30 18:54:10.787454 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00418: Parent: Created child process 15564
+[Sat Nov 30 18:54:12.757033 2024] [mpm_winnt:notice] [pid 20388:tid 392] AH00364: Child: All worker threads have exited.
+[Sat Nov 30 18:54:13.100739 2024] [mpm_winnt:notice] [pid 15564:tid 368] AH00354: Child: Starting 64 worker threads.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 20236:tid 380] AH00424: Parent: Received restart signal -- Restarting the server.
+[Sat Nov 30 18:57:35.875490 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sat Nov 30 18:57:35.875490 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sat Nov 30 18:57:35.875490 2024] [core:notice] [pid 20236:tid 380] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sat Nov 30 18:57:35.891120 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00418: Parent: Created child process 11524
+[Sat Nov 30 18:57:38.219239 2024] [mpm_winnt:notice] [pid 11524:tid 392] AH00354: Child: Starting 64 worker threads.
+[Sat Nov 30 18:57:44.125489 2024] [mpm_winnt:notice] [pid 15564:tid 368] AH00364: Child: All worker threads have exited.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 20236:tid 380] AH00424: Parent: Received restart signal -- Restarting the server.
+[Sun Dec 01 09:23:58.947117 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 01 09:23:58.947117 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 01 09:23:58.947117 2024] [core:notice] [pid 20236:tid 380] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 01 09:23:58.962736 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00418: Parent: Created child process 16504
+[Sun Dec 01 09:24:00.901625 2024] [mpm_winnt:notice] [pid 11524:tid 392] AH00364: Child: All worker threads have exited.
+[Sun Dec 01 09:24:01.262097 2024] [mpm_winnt:notice] [pid 16504:tid 412] AH00354: Child: Starting 64 worker threads.
+[Sun Dec 01 09:24:15.285318 2024] [php:error] [pid 16504:tid 1140] [client 127.0.0.1:26870] PHP Parse error:  syntax error, unexpected token ";" in E:\\www\\WebApp\\index.php on line 1
+[Sun Dec 01 09:26:35.551713 2024] [php:error] [pid 16504:tid 1136] [client 127.0.0.1:26900] PHP Parse error:  syntax error, unexpected token ";" in E:\\www\\WebApp\\index.php on line 4
+[Sun Dec 01 09:26:39.210942 2024] [php:error] [pid 16504:tid 1136] [client 127.0.0.1:26900] PHP Parse error:  syntax error, unexpected token ";" in E:\\www\\WebApp\\index.php on line 4
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 20236:tid 380] AH00424: Parent: Received restart signal -- Restarting the server.
+[Sun Dec 01 09:32:37.254088 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 01 09:32:37.254088 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 01 09:32:37.254088 2024] [core:notice] [pid 20236:tid 380] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 01 09:32:37.269715 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00418: Parent: Created child process 18304
+[Sun Dec 01 09:32:39.231987 2024] [mpm_winnt:notice] [pid 16504:tid 412] AH00364: Child: All worker threads have exited.
+[Sun Dec 01 09:32:39.544489 2024] [mpm_winnt:notice] [pid 18304:tid 404] AH00354: Child: Starting 64 worker threads.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 20236:tid 380] AH00424: Parent: Received restart signal -- Restarting the server.
+[Sun Dec 01 09:44:25.065174 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 01 09:44:25.065174 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 01 09:44:25.065174 2024] [core:notice] [pid 20236:tid 380] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 01 09:44:25.065174 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00418: Parent: Created child process 12196
+[Sun Dec 01 09:44:27.022009 2024] [mpm_winnt:notice] [pid 18304:tid 404] AH00364: Child: All worker threads have exited.
+[Sun Dec 01 09:44:27.511447 2024] [mpm_winnt:notice] [pid 12196:tid 368] AH00354: Child: Starting 64 worker threads.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 20236:tid 380] AH00424: Parent: Received restart signal -- Restarting the server.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: ext\\pdo_sqlite (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel), ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 01 09:53:03.126732 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 01 09:53:03.126732 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 01 09:53:03.126732 2024] [core:notice] [pid 20236:tid 380] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 01 09:53:03.128349 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00418: Parent: Created child process 8868
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: ext\\pdo_sqlite (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel), ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 01 09:53:05.679638 2024] [mpm_winnt:notice] [pid 8868:tid 380] AH00354: Child: Starting 64 worker threads.
+[Sun Dec 01 09:53:37.320306 2024] [mpm_winnt:notice] [pid 12196:tid 368] AH00362: Child: Waiting 30 more seconds for 1 worker threads to finish.
+[Sun Dec 01 09:53:44.812528 2024] [mpm_winnt:notice] [pid 12196:tid 368] AH00364: Child: All worker threads have exited.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 20236:tid 380] AH00424: Parent: Received restart signal -- Restarting the server.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: ext\\pdo_sqlite (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel), ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 01 11:35:59.545188 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 01 11:35:59.545188 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 01 11:35:59.545188 2024] [core:notice] [pid 20236:tid 380] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 01 11:35:59.560820 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00418: Parent: Created child process 1204
+[Sun Dec 01 11:36:01.494975 2024] [mpm_winnt:notice] [pid 8868:tid 380] AH00364: Child: All worker threads have exited.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: ext\\pdo_sqlite (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel), ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 01 11:36:02.182486 2024] [mpm_winnt:notice] [pid 1204:tid 388] AH00354: Child: Starting 64 worker threads.
+[Sun Dec 01 11:38:34.218295 2024] [php:error] [pid 1204:tid 1160] [client 127.0.0.1:29093] PHP Fatal error:  Uncaught Error: Class "SQLite3" not found in E:\\www\\WebApp\\db.php:6\nStack trace:\n#0 {main}\n  thrown in E:\\www\\WebApp\\db.php on line 6
+[Sun Dec 01 11:41:01.462152 2024] [php:error] [pid 1204:tid 1172] [client 127.0.0.1:29121] PHP Fatal error:  Uncaught Error: Class "SQLite3" not found in E:\\www\\WebApp\\db.php:6\nStack trace:\n#0 {main}\n  thrown in E:\\www\\WebApp\\db.php on line 6
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 20236:tid 380] AH00424: Parent: Received restart signal -- Restarting the server.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: ext\\pdo_sqlite (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel), ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: ext\\sqlite3 (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel), ext\\php_sqlite3.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 01 11:41:07.571031 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 01 11:41:07.571031 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 01 11:41:07.571031 2024] [core:notice] [pid 20236:tid 380] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 01 11:41:07.578032 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00418: Parent: Created child process 10612
+[Sun Dec 01 11:41:08.332068 2024] [php:error] [pid 1204:tid 1160] [client 127.0.0.1:29122] PHP Fatal error:  Uncaught Error: Class "SQLite3" not found in E:\\www\\WebApp\\db.php:6\nStack trace:\n#0 {main}\n  thrown in E:\\www\\WebApp\\db.php on line 6
+[Sun Dec 01 11:41:09.516592 2024] [mpm_winnt:notice] [pid 1204:tid 388] AH00364: Child: All worker threads have exited.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: ext\\pdo_sqlite (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel), ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: ext\\sqlite3 (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel), ext\\php_sqlite3.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 01 11:41:10.048533 2024] [mpm_winnt:notice] [pid 10612:tid 384] AH00354: Child: Starting 64 worker threads.
+[Sun Dec 01 11:41:11.630967 2024] [php:error] [pid 10612:tid 1188] [client 127.0.0.1:29124] PHP Fatal error:  Uncaught Error: Class "SQLite3" not found in E:\\www\\WebApp\\db.php:6\nStack trace:\n#0 {main}\n  thrown in E:\\www\\WebApp\\db.php on line 6
+[Sun Dec 01 11:41:13.077612 2024] [php:error] [pid 10612:tid 1188] [client 127.0.0.1:29124] PHP Fatal error:  Uncaught Error: Class "SQLite3" not found in E:\\www\\WebApp\\db.php:6\nStack trace:\n#0 {main}\n  thrown in E:\\www\\WebApp\\db.php on line 6
+[Sun Dec 01 11:45:35.409074 2024] [php:error] [pid 10612:tid 1184] [client 127.0.0.1:29191] PHP Fatal error:  Uncaught Error: Class "SQLite3" not found in E:\\www\\WebApp\\db.php:4\nStack trace:\n#0 {main}\n  thrown in E:\\www\\WebApp\\db.php on line 4
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 20236:tid 380] AH00424: Parent: Received restart signal -- Restarting the server.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: ext\\pdo_sqlite (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel), ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: ext\\sqlite3 (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel), ext\\php_sqlite3.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 01 11:46:15.570233 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 01 11:46:15.570233 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 01 11:46:15.570321 2024] [core:notice] [pid 20236:tid 380] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 01 11:46:15.570321 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00418: Parent: Created child process 15024
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: ext\\pdo_sqlite (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel), ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: ext\\sqlite3 (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel), ext\\php_sqlite3.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 01 11:46:17.950228 2024] [mpm_winnt:notice] [pid 15024:tid 404] AH00354: Child: Starting 64 worker threads.
+[Sun Dec 01 11:46:37.452028 2024] [mpm_winnt:notice] [pid 10612:tid 384] AH00364: Child: All worker threads have exited.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 20236:tid 380] AH00424: Parent: Received restart signal -- Restarting the server.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: ext\\pdo_sqlite (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel), ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: ext\\sqlite3 (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel), ext\\php_sqlite3.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 01 11:57:25.879538 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 01 11:57:25.879538 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 01 11:57:25.879538 2024] [core:notice] [pid 20236:tid 380] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 01 11:57:25.895166 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00418: Parent: Created child process 10656
+[Sun Dec 01 11:57:27.841312 2024] [mpm_winnt:notice] [pid 15024:tid 404] AH00364: Child: All worker threads have exited.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: ext\\pdo_sqlite (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel), ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: ext\\sqlite3 (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel), ext\\php_sqlite3.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 01 11:57:28.698685 2024] [mpm_winnt:notice] [pid 10656:tid 376] AH00354: Child: Starting 64 worker threads.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 20236:tid 380] AH00424: Parent: Received restart signal -- Restarting the server.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: ext\\pdo_sqlite (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel), ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: ext\\sqlite3 (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel), ext\\php_sqlite3.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 01 12:01:15.730086 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 01 12:01:15.730086 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 01 12:01:15.730086 2024] [core:notice] [pid 20236:tid 380] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 01 12:01:15.761340 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00418: Parent: Created child process 5232
+[Sun Dec 01 12:01:17.702352 2024] [mpm_winnt:notice] [pid 10656:tid 376] AH00364: Child: All worker threads have exited.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: ext\\pdo_sqlite (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel), ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: ext\\sqlite3 (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel), ext\\php_sqlite3.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 01 12:01:18.139879 2024] [mpm_winnt:notice] [pid 5232:tid 368] AH00354: Child: Starting 64 worker threads.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 20236:tid 380] AH00424: Parent: Received restart signal -- Restarting the server.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: E:\\www\\PHP 8.4\\ext\\pdo_sqlite (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'sqlite3' in Unknown on line 0
+[Sun Dec 01 12:25:19.725009 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 01 12:25:19.725009 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 01 12:25:19.725009 2024] [core:notice] [pid 20236:tid 380] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 01 12:25:19.756259 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00418: Parent: Created child process 16248
+[Sun Dec 01 12:25:21.693757 2024] [mpm_winnt:notice] [pid 5232:tid 368] AH00364: Child: All worker threads have exited.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: E:\\www\\PHP 8.4\\ext\\pdo_sqlite (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'sqlite3' in Unknown on line 0
+[Sun Dec 01 12:25:22.146890 2024] [mpm_winnt:notice] [pid 16248:tid 392] AH00354: Child: Starting 64 worker threads.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 20236:tid 380] AH00424: Parent: Received restart signal -- Restarting the server.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: E:\\www\\PHP 8.4\\ext\\pdo_sqlite (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'sqlite3' in Unknown on line 0
+[Sun Dec 01 12:26:30.813809 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 01 12:26:30.813809 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 01 12:26:30.813809 2024] [core:notice] [pid 20236:tid 380] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 01 12:26:30.813809 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00418: Parent: Created child process 9556
+[Sun Dec 01 12:26:32.782613 2024] [mpm_winnt:notice] [pid 16248:tid 392] AH00364: Child: All worker threads have exited.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: E:\\www\\PHP 8.4\\ext\\pdo_sqlite (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'sqlite3' in Unknown on line 0
+[Sun Dec 01 12:26:33.391991 2024] [mpm_winnt:notice] [pid 9556:tid 392] AH00354: Child: Starting 64 worker threads.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 20236:tid 380] AH00424: Parent: Received restart signal -- Restarting the server.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: E:\\www\\PHP 8.4\\ext\\pdo_sqlite (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: E:\\www\\PHP 8.4\\ext\\sqlite3 (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_sqlite3.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 01 12:30:50.913929 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 01 12:30:50.913929 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 01 12:30:50.913929 2024] [core:notice] [pid 20236:tid 380] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 01 12:30:50.945219 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00418: Parent: Created child process 6808
+[Sun Dec 01 12:30:52.867104 2024] [mpm_winnt:notice] [pid 9556:tid 392] AH00364: Child: All worker threads have exited.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: E:\\www\\PHP 8.4\\ext\\pdo_sqlite (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: E:\\www\\PHP 8.4\\ext\\sqlite3 (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_sqlite3.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 01 12:30:53.446106 2024] [mpm_winnt:notice] [pid 6808:tid 376] AH00354: Child: Starting 64 worker threads.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 20236:tid 380] AH00424: Parent: Received restart signal -- Restarting the server.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: E:\\www\\PHP 8.4\\ext\\sqlite3 (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_sqlite3.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 01 12:32:05.890354 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 01 12:32:05.890354 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 01 12:32:05.890354 2024] [core:notice] [pid 20236:tid 380] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 01 12:32:05.890354 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00418: Parent: Created child process 14600
+[Sun Dec 01 12:32:07.859118 2024] [mpm_winnt:notice] [pid 6808:tid 376] AH00364: Child: All worker threads have exited.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: E:\\www\\PHP 8.4\\ext\\sqlite3 (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_sqlite3.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 01 12:32:08.405978 2024] [mpm_winnt:notice] [pid 14600:tid 392] AH00354: Child: Starting 64 worker threads.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 20236:tid 380] AH00424: Parent: Received restart signal -- Restarting the server.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: E:\\www\\PHP 8.4\\ext\\pdo_sqlite (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 01 12:32:42.404739 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 01 12:32:42.404739 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 01 12:32:42.404739 2024] [core:notice] [pid 20236:tid 380] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 01 12:32:42.420365 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00418: Parent: Created child process 19636
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: E:\\www\\PHP 8.4\\ext\\pdo_sqlite (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 01 12:32:44.783619 2024] [mpm_winnt:notice] [pid 19636:tid 392] AH00354: Child: Starting 64 worker threads.
+[Sun Dec 01 12:32:46.201714 2024] [mpm_winnt:notice] [pid 14600:tid 392] AH00364: Child: All worker threads have exited.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 20236:tid 380] AH00424: Parent: Received restart signal -- Restarting the server.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\php\\ext\\pdo_sqlite (The specified module could not be found), C:\\php\\ext\\php_pdo_sqlite.dll (The specified module could not be found)) in Unknown on line 0
+[Sun Dec 01 12:38:29.272080 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 01 12:38:29.272080 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 01 12:38:29.272080 2024] [core:notice] [pid 20236:tid 380] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 01 12:38:29.287699 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00418: Parent: Created child process 19860
+[Sun Dec 01 12:38:31.226359 2024] [mpm_winnt:notice] [pid 19636:tid 392] AH00364: Child: All worker threads have exited.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\php\\ext\\pdo_sqlite (The specified module could not be found), C:\\php\\ext\\php_pdo_sqlite.dll (The specified module could not be found)) in Unknown on line 0
+[Sun Dec 01 12:38:31.713196 2024] [mpm_winnt:notice] [pid 19860:tid 196] AH00354: Child: Starting 64 worker threads.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 20236:tid 380] AH00424: Parent: Received restart signal -- Restarting the server.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: ext\\pdo_sqlite (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel), ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 01 12:39:16.849730 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 01 12:39:16.849730 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 01 12:39:16.849730 2024] [core:notice] [pid 20236:tid 380] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 01 12:39:16.865351 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00418: Parent: Created child process 20388
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: ext\\pdo_sqlite (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel), ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 01 12:39:19.068507 2024] [mpm_winnt:notice] [pid 20388:tid 392] AH00354: Child: Starting 64 worker threads.
+[Sun Dec 01 12:39:26.584102 2024] [mpm_winnt:notice] [pid 19860:tid 196] AH00364: Child: All worker threads have exited.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 20236:tid 380] AH00424: Parent: Received restart signal -- Restarting the server.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: ext\\pdo_sqlite (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel), ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 01 12:41:47.634876 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 01 12:41:47.634876 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 01 12:41:47.634876 2024] [core:notice] [pid 20236:tid 380] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 01 12:41:47.666152 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00418: Parent: Created child process 3588
+[Sun Dec 01 12:41:49.603627 2024] [mpm_winnt:notice] [pid 20388:tid 392] AH00364: Child: All worker threads have exited.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: ext\\pdo_sqlite (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel), ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 01 12:41:49.947377 2024] [mpm_winnt:notice] [pid 3588:tid 392] AH00354: Child: Starting 64 worker threads.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 20236:tid 380] AH00424: Parent: Received restart signal -- Restarting the server.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: \\ext\\pdo_sqlite (The specified module could not be found), \\ext\\php_pdo_sqlite.dll (The specified module could not be found)) in Unknown on line 0
+[Sun Dec 01 12:42:45.982111 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 01 12:42:45.982111 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 01 12:42:45.982111 2024] [core:notice] [pid 20236:tid 380] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 01 12:42:45.997749 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00418: Parent: Created child process 4356
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: \\ext\\pdo_sqlite (The specified module could not be found), \\ext\\php_pdo_sqlite.dll (The specified module could not be found)) in Unknown on line 0
+[Sun Dec 01 12:42:48.327230 2024] [mpm_winnt:notice] [pid 4356:tid 188] AH00354: Child: Starting 64 worker threads.
+[Sun Dec 01 12:42:51.952514 2024] [mpm_winnt:notice] [pid 3588:tid 392] AH00364: Child: All worker threads have exited.
+[Sun Dec 08 09:18:12.030598 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Dec 08 09:18:14.061879 2024] [mpm_winnt:notice] [pid 4356:tid 188] AH00364: Child: All worker threads have exited.
+[Sun Dec 08 09:18:14.124350 2024] [mpm_winnt:notice] [pid 20236:tid 380] AH00430: Parent: Child process 4356 exited successfully.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: \\ext\\pdo_sqlite (The specified module could not be found), \\ext\\php_pdo_sqlite.dll (The specified module could not be found)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3.dll' (tried: \\ext\\sqlite3.dll (The specified module could not be found), \\ext\\php_sqlite3.dll.dll (The specified module could not be found)) in Unknown on line 0
+[Sun Dec 08 09:18:17.058421 2024] [mpm_winnt:notice] [pid 7992:tid 384] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 08 09:18:17.058421 2024] [mpm_winnt:notice] [pid 7992:tid 384] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 08 09:18:17.058421 2024] [core:notice] [pid 7992:tid 384] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 08 09:18:17.074049 2024] [mpm_winnt:notice] [pid 7992:tid 384] AH00418: Parent: Created child process 20044
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: \\ext\\pdo_sqlite (The specified module could not be found), \\ext\\php_pdo_sqlite.dll (The specified module could not be found)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3.dll' (tried: \\ext\\sqlite3.dll (The specified module could not be found), \\ext\\php_sqlite3.dll.dll (The specified module could not be found)) in Unknown on line 0
+[Sun Dec 08 09:18:19.455840 2024] [mpm_winnt:notice] [pid 20044:tid 392] AH00354: Child: Starting 64 worker threads.
+(OS 5)Access is denied.  : AH10014: Failed to open the 'Apache2.4' service
+(OS 5)Access is denied.  : AH10014: Failed to open the 'Apache2.4' service
+(OS 5)Access is denied.  : AH10014: Failed to open the 'Apache2.4' service
+(OS 5)Access is denied.  : AH10014: Failed to open the 'Apache2.4' service
+[Sun Dec 08 09:41:31.986900 2024] [mpm_winnt:notice] [pid 7992:tid 384] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Dec 08 09:42:01.994957 2024] [mpm_winnt:notice] [pid 7992:tid 384] AH00431: Parent: Forcing termination of child process 20044
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: \\ext\\pdo_sqlite (The specified module could not be found), \\ext\\php_pdo_sqlite.dll (The specified module could not be found)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: \\ext\\sqlite3 (The specified module could not be found), \\ext\\php_sqlite3.dll (The specified module could not be found)) in Unknown on line 0
+[Sun Dec 08 09:42:18.809888 2024] [mpm_winnt:notice] [pid 13920:tid 380] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 08 09:42:18.809888 2024] [mpm_winnt:notice] [pid 13920:tid 380] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 08 09:42:18.809888 2024] [core:notice] [pid 13920:tid 380] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 08 09:42:18.825508 2024] [mpm_winnt:notice] [pid 13920:tid 380] AH00418: Parent: Created child process 21232
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: \\ext\\pdo_sqlite (The specified module could not be found), \\ext\\php_pdo_sqlite.dll (The specified module could not be found)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: \\ext\\sqlite3 (The specified module could not be found), \\ext\\php_sqlite3.dll (The specified module could not be found)) in Unknown on line 0
+[Sun Dec 08 09:42:21.385050 2024] [mpm_winnt:notice] [pid 21232:tid 376] AH00354: Child: Starting 64 worker threads.
+[Sun Dec 08 09:45:59.672010 2024] [mpm_winnt:notice] [pid 13920:tid 380] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Dec 08 09:46:01.703645 2024] [mpm_winnt:notice] [pid 21232:tid 376] AH00364: Child: All worker threads have exited.
+[Sun Dec 08 09:46:01.719189 2024] [mpm_winnt:notice] [pid 13920:tid 380] AH00430: Parent: Child process 21232 exited successfully.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: \\ext\\pdo_sqlite (The specified module could not be found), \\ext\\php_pdo_sqlite.dll (The specified module could not be found)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'php_sqlite3.dll' (tried: \\ext\\php_sqlite3.dll (The specified module could not be found), \\ext\\php_php_sqlite3.dll.dll (The specified module could not be found)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3.dll' (tried: \\ext\\sqlite3.dll (The specified module could not be found), \\ext\\php_sqlite3.dll.dll (The specified module could not be found)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: \\ext\\sqlite3 (The specified module could not be found), \\ext\\php_sqlite3.dll (The specified module could not be found)) in Unknown on line 0
+[Sun Dec 08 09:46:04.782110 2024] [mpm_winnt:notice] [pid 22000:tid 376] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 08 09:46:04.782110 2024] [mpm_winnt:notice] [pid 22000:tid 376] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 08 09:46:04.782110 2024] [core:notice] [pid 22000:tid 376] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 08 09:46:04.788794 2024] [mpm_winnt:notice] [pid 22000:tid 376] AH00418: Parent: Created child process 23360
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: \\ext\\pdo_sqlite (The specified module could not be found), \\ext\\php_pdo_sqlite.dll (The specified module could not be found)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'php_sqlite3.dll' (tried: \\ext\\php_sqlite3.dll (The specified module could not be found), \\ext\\php_php_sqlite3.dll.dll (The specified module could not be found)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3.dll' (tried: \\ext\\sqlite3.dll (The specified module could not be found), \\ext\\php_sqlite3.dll.dll (The specified module could not be found)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: \\ext\\sqlite3 (The specified module could not be found), \\ext\\php_sqlite3.dll (The specified module could not be found)) in Unknown on line 0
+[Sun Dec 08 09:46:07.208162 2024] [mpm_winnt:notice] [pid 23360:tid 392] AH00354: Child: Starting 64 worker threads.
+[Sun Dec 08 09:56:02.909745 2024] [mpm_winnt:notice] [pid 22000:tid 376] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Dec 08 09:56:04.940970 2024] [mpm_winnt:notice] [pid 23360:tid 392] AH00364: Child: All worker threads have exited.
+[Sun Dec 08 09:56:04.956888 2024] [mpm_winnt:notice] [pid 22000:tid 376] AH00430: Parent: Child process 23360 exited successfully.
+Starting the 'Apache2.4' service
+The 'Apache2.4' service is running.
+ load dynamic library 'pdo_sqlite' (tried: E:/www/PHP 8.4/ext\\pdo_sqlite (The specified module could not be found), E:/www/PHP 8.4/ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'sqlite3' in Unknown on line 0
+[Sun Dec 08 12:13:29.957844 2024] [mpm_winnt:notice] [pid 22540:tid 388] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 08 12:13:29.957844 2024] [mpm_winnt:notice] [pid 22540:tid 388] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 08 12:13:29.957844 2024] [core:notice] [pid 22540:tid 388] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 08 12:13:29.957844 2024] [mpm_winnt:notice] [pid 22540:tid 388] AH00418: Parent: Created child process 19872
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: E:/www/PHP 8.4/ext\\pdo_sqlite (The specified module could not be found), E:/www/PHP 8.4/ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'sqlite3' in Unknown on line 0
+[Sun Dec 08 12:13:32.223455 2024] [mpm_winnt:notice] [pid 19872:tid 392] AH00354: Child: Starting 64 worker threads.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 22540:tid 388] AH00424: Parent: Received restart signal -- Restarting the server.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: E:/www/PHP 8.4/ext\\pdo_sqlite (The specified module could not be found), E:/www/PHP 8.4/ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: E:/www/PHP 8.4/ext\\sqlite3 (The specified module could not be found), E:/www/PHP 8.4/ext\\php_sqlite3.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 08 12:14:57.067902 2024] [mpm_winnt:notice] [pid 22540:tid 388] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 08 12:14:57.067902 2024] [mpm_winnt:notice] [pid 22540:tid 388] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 08 12:14:57.067902 2024] [core:notice] [pid 22540:tid 388] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 08 12:14:57.067902 2024] [mpm_winnt:notice] [pid 22540:tid 388] AH00418: Parent: Created child process 7896
+[Sun Dec 08 12:14:59.036656 2024] [mpm_winnt:notice] [pid 19872:tid 392] AH00364: Child: All worker threads have exited.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: E:/www/PHP 8.4/ext\\pdo_sqlite (The specified module could not be found), E:/www/PHP 8.4/ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: E:/www/PHP 8.4/ext\\sqlite3 (The specified module could not be found), E:/www/PHP 8.4/ext\\php_sqlite3.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 08 12:14:59.458532 2024] [mpm_winnt:notice] [pid 7896:tid 392] AH00354: Child: Starting 64 worker threads.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 22540:tid 388] AH00424: Parent: Received restart signal -- Restarting the server.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: E:/www/PHP 8.4/ext\\pdo_sqlite (The specified module could not be found), E:/www/PHP 8.4/ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: E:/www/PHP 8.4/ext\\sqlite3 (The specified module could not be found), E:/www/PHP 8.4/ext\\php_sqlite3.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 08 12:17:02.278451 2024] [mpm_winnt:notice] [pid 22540:tid 388] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 08 12:17:02.278451 2024] [mpm_winnt:notice] [pid 22540:tid 388] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 08 12:17:02.278451 2024] [core:notice] [pid 22540:tid 388] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 08 12:17:02.294067 2024] [mpm_winnt:notice] [pid 22540:tid 388] AH00418: Parent: Created child process 18220
+[Sun Dec 08 12:17:04.247502 2024] [mpm_winnt:notice] [pid 7896:tid 392] AH00364: Child: All worker threads have exited.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: E:/www/PHP 8.4/ext\\pdo_sqlite (The specified module could not be found), E:/www/PHP 8.4/ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: E:/www/PHP 8.4/ext\\sqlite3 (The specified module could not be found), E:/www/PHP 8.4/ext\\php_sqlite3.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 08 12:17:04.671922 2024] [mpm_winnt:notice] [pid 18220:tid 368] AH00354: Child: Starting 64 worker threads.
+The 'Apache2.4' service is restarting.
+Failed to restart the 'Apache2.4' service.
+t:notice] [pid 22540:tid 388] AH00424: Parent: Received restart signal -- Restarting the server.
+[Sun Dec 08 12:18:32.672705 2024] [mpm_winnt:notice] [pid 18220:tid 368] AH00364: Child: All worker threads have exited.
+The 'Apache2.4' service is restarting.
+Starting the 'Apache2.4' service
+The 'Apache2.4' service is running.
+ore:warn] [pid 19788:tid 388] AH00098: pid file E:/www/Apache 2.4/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: E:/www/PHP 8.4/ext\\pdo_sqlite (The specified module could not be found), E:/www/PHP 8.4/ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: E:/www/PHP 8.4/ext\\sqlite3 (The specified module could not be found), E:/www/PHP 8.4/ext\\php_sqlite3.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 08 12:19:39.273241 2024] [mpm_winnt:notice] [pid 19788:tid 388] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 08 12:19:39.273241 2024] [mpm_winnt:notice] [pid 19788:tid 388] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 08 12:19:39.273241 2024] [core:notice] [pid 19788:tid 388] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 08 12:19:39.276239 2024] [mpm_winnt:notice] [pid 19788:tid 388] AH00418: Parent: Created child process 13464
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: E:/www/PHP 8.4/ext\\pdo_sqlite (The specified module could not be found), E:/www/PHP 8.4/ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: E:/www/PHP 8.4/ext\\sqlite3 (The specified module could not be found), E:/www/PHP 8.4/ext\\php_sqlite3.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 08 12:19:41.633777 2024] [mpm_winnt:notice] [pid 13464:tid 376] AH00354: Child: Starting 64 worker threads.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 19788:tid 388] AH00424: Parent: Received restart signal -- Restarting the server.
+PHP Warning:  PHP Startup: bz2: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'curl' (tried: C:\\xampp\\php\\ext\\curl (The specified module could not be found), C:\\xampp\\php\\ext\\php_curl.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: fileinfo: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: gettext: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: mbstring: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: exif: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: mysqli: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: C:\\xampp\\php\\ext\\sqlite3 (The specified module could not be found), C:\\xampp\\php\\ext\\php_sqlite3.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'php_openssl.dll' (tried: C:\\xampp\\php\\ext\\php_openssl.dll (The specified procedure could not be found), C:\\xampp\\php\\ext\\php_php_openssl.dll.dll (The specified module could not be found)) in Unknown on line 0
+PHP Warning:  PHP Startup: ftp: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+[Sun Dec 08 12:21:05.007135 2024] [mpm_winnt:notice] [pid 19788:tid 388] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 08 12:21:05.007135 2024] [mpm_winnt:notice] [pid 19788:tid 388] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 08 12:21:05.007135 2024] [core:notice] [pid 19788:tid 388] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 08 12:21:05.007135 2024] [mpm_winnt:notice] [pid 19788:tid 388] AH00418: Parent: Created child process 15464
+[Sun Dec 08 12:21:06.929404 2024] [mpm_winnt:notice] [pid 13464:tid 376] AH00364: Child: All worker threads have exited.
+PHP Warning:  PHP Startup: bz2: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'curl' (tried: C:\\xampp\\php\\ext\\curl (The specified module could not be found), C:\\xampp\\php\\ext\\php_curl.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: fileinfo: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: gettext: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: mbstring: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: exif: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: mysqli: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: C:\\xampp\\php\\ext\\sqlite3 (The specified module could not be found), C:\\xampp\\php\\ext\\php_sqlite3.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'php_openssl.dll' (tried: C:\\xampp\\php\\ext\\php_openssl.dll (The specified procedure could not be found), C:\\xampp\\php\\ext\\php_php_openssl.dll.dll (The specified module could not be found)) in Unknown on line 0
+PHP Warning:  PHP Startup: ftp: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+[Sun Dec 08 12:21:07.273155 2024] [mpm_winnt:notice] [pid 15464:tid 392] AH00354: Child: Starting 64 worker threads.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 19788:tid 388] AH00424: Parent: Received restart signal -- Restarting the server.
+PHP Warning:  PHP Startup: bz2: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'curl' (tried: C:\\xampp\\php\\ext\\curl (The specified module could not be found), C:\\xampp\\php\\ext\\php_curl.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: fileinfo: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: gettext: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: mbstring: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: exif: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: mysqli: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: PDO_ODBC: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: C:\\xampp\\php\\ext\\sqlite3 (The specified module could not be found), C:\\xampp\\php\\ext\\php_sqlite3.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'php_openssl.dll' (tried: C:\\xampp\\php\\ext\\php_openssl.dll (The specified procedure could not be found), C:\\xampp\\php\\ext\\php_php_openssl.dll.dll (The specified module could not be found)) in Unknown on line 0
+PHP Warning:  PHP Startup: ftp: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+[Sun Dec 08 12:21:49.080481 2024] [mpm_winnt:notice] [pid 19788:tid 388] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 08 12:21:49.080481 2024] [mpm_winnt:notice] [pid 19788:tid 388] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 08 12:21:49.080481 2024] [core:notice] [pid 19788:tid 388] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 08 12:21:49.084069 2024] [mpm_winnt:notice] [pid 19788:tid 388] AH00418: Parent: Created child process 11808
+PHP Warning:  PHP Startup: bz2: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'curl' (tried: C:\\xampp\\php\\ext\\curl (The specified module could not be found), C:\\xampp\\php\\ext\\php_curl.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: fileinfo: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: gettext: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: mbstring: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: exif: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: mysqli: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: PDO_ODBC: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: C:\\xampp\\php\\ext\\sqlite3 (The specified module could not be found), C:\\xampp\\php\\ext\\php_sqlite3.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'php_openssl.dll' (tried: C:\\xampp\\php\\ext\\php_openssl.dll (The specified procedure could not be found), C:\\xampp\\php\\ext\\php_php_openssl.dll.dll (The specified module could not be found)) in Unknown on line 0
+PHP Warning:  PHP Startup: ftp: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+[Sun Dec 08 12:21:51.634434 2024] [mpm_winnt:notice] [pid 11808:tid 392] AH00354: Child: Starting 64 worker threads.
+[Sun Dec 08 12:21:55.656048 2024] [mpm_winnt:notice] [pid 15464:tid 392] AH00364: Child: All worker threads have exited.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 19788:tid 388] AH00424: Parent: Received restart signal -- Restarting the server.
+PHP Warning:  PHP Startup: bz2: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'curl' (tried: C:\\xampp\\php\\ext\\curl (The specified module could not be found), C:\\xampp\\php\\ext\\php_curl.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: fileinfo: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: gettext: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: mbstring: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: exif: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: mysqli: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: PDO_ODBC: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: C:\\xampp\\php\\ext\\sqlite3 (The specified module could not be found), C:\\xampp\\php\\ext\\php_sqlite3.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'php_openssl.dll' (tried: C:\\xampp\\php\\ext\\php_openssl.dll (The specified procedure could not be found), C:\\xampp\\php\\ext\\php_php_openssl.dll.dll (The specified module could not be found)) in Unknown on line 0
+PHP Warning:  PHP Startup: ftp: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+[Sun Dec 08 12:22:59.548384 2024] [mpm_winnt:notice] [pid 19788:tid 388] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 08 12:22:59.548384 2024] [mpm_winnt:notice] [pid 19788:tid 388] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 08 12:22:59.548384 2024] [core:notice] [pid 19788:tid 388] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 08 12:22:59.548384 2024] [mpm_winnt:notice] [pid 19788:tid 388] AH00418: Parent: Created child process 4356
+[Sun Dec 08 12:23:01.484743 2024] [mpm_winnt:notice] [pid 11808:tid 392] AH00364: Child: All worker threads have exited.
+PHP Warning:  PHP Startup: bz2: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'curl' (tried: C:\\xampp\\php\\ext\\curl (The specified module could not be found), C:\\xampp\\php\\ext\\php_curl.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: fileinfo: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: gettext: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: mbstring: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: exif: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: mysqli: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: PDO_ODBC: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: C:\\xampp\\php\\ext\\pdo_sqlite (The specified module could not be found), C:\\xampp\\php\\ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: C:\\xampp\\php\\ext\\sqlite3 (The specified module could not be found), C:\\xampp\\php\\ext\\php_sqlite3.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'php_openssl.dll' (tried: C:\\xampp\\php\\ext\\php_openssl.dll (The specified procedure could not be found), C:\\xampp\\php\\ext\\php_php_openssl.dll.dll (The specified module could not be found)) in Unknown on line 0
+PHP Warning:  PHP Startup: ftp: Unable to initialize module\nModule compiled with module API=20220829\nPHP    compiled with module API=20240924\nThese options need to match\n in Unknown on line 0
+[Sun Dec 08 12:23:01.918122 2024] [mpm_winnt:notice] [pid 4356:tid 408] AH00354: Child: Starting 64 worker threads.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 19788:tid 388] AH00424: Parent: Received restart signal -- Restarting the server.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'curl' (tried: E:\\www\\PHP 8.4\\ext\\curl (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_curl.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: E:\\www\\PHP 8.4\\ext\\pdo_sqlite (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: E:\\www\\PHP 8.4\\ext\\sqlite3 (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_sqlite3.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 08 12:23:38.435097 2024] [mpm_winnt:notice] [pid 19788:tid 388] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 08 12:23:38.435097 2024] [mpm_winnt:notice] [pid 19788:tid 388] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 08 12:23:38.435097 2024] [core:notice] [pid 19788:tid 388] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 08 12:23:38.435097 2024] [mpm_winnt:notice] [pid 19788:tid 388] AH00418: Parent: Created child process 19884
+PHP Warning:  PHP Startup: Unable to load dynamic library 'curl' (tried: E:\\www\\PHP 8.4\\ext\\curl (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_curl.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: E:\\www\\PHP 8.4\\ext\\pdo_sqlite (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: E:\\www\\PHP 8.4\\ext\\sqlite3 (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_sqlite3.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 08 12:23:40.803398 2024] [mpm_winnt:notice] [pid 19884:tid 372] AH00354: Child: Starting 64 worker threads.
+[Sun Dec 08 12:23:43.327000 2024] [mpm_winnt:notice] [pid 4356:tid 408] AH00364: Child: All worker threads have exited.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 19788:tid 388] AH00424: Parent: Received restart signal -- Restarting the server.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'curl' (tried: E:\\www\\PHP 8.4\\ext\\curl (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_curl.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: E:\\www\\PHP 8.4\\ext\\pdo_sqlite (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: E:\\www\\PHP 8.4\\ext\\sqlite3 (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_sqlite3.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 08 12:25:12.387619 2024] [mpm_winnt:notice] [pid 19788:tid 388] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 08 12:25:12.387619 2024] [mpm_winnt:notice] [pid 19788:tid 388] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 08 12:25:12.387619 2024] [core:notice] [pid 19788:tid 388] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 08 12:25:12.403249 2024] [mpm_winnt:notice] [pid 19788:tid 388] AH00418: Parent: Created child process 22580
+[Sun Dec 08 12:25:14.356363 2024] [mpm_winnt:notice] [pid 19884:tid 372] AH00364: Child: All worker threads have exited.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'curl' (tried: E:\\www\\PHP 8.4\\ext\\curl (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_curl.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: E:\\www\\PHP 8.4\\ext\\pdo_sqlite (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: E:\\www\\PHP 8.4\\ext\\sqlite3 (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_sqlite3.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 08 12:25:14.690519 2024] [mpm_winnt:notice] [pid 22580:tid 408] AH00354: Child: Starting 64 worker threads.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 19788:tid 388] AH00424: Parent: Received restart signal -- Restarting the server.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'curl' (tried: E:\\www\\PHP 8.4\\ext\\curl (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_curl.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: E:\\www\\PHP 8.4\\ext\\pdo_sqlite (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_pdo_sqlite.dll (The specified module could not be found)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: E:\\www\\PHP 8.4\\ext\\sqlite3 (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_sqlite3.dll (The specified module could not be found)) in Unknown on line 0
+[Sun Dec 08 12:32:25.880479 2024] [mpm_winnt:notice] [pid 19788:tid 388] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 08 12:32:25.880479 2024] [mpm_winnt:notice] [pid 19788:tid 388] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 08 12:32:25.880479 2024] [core:notice] [pid 19788:tid 388] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 08 12:32:25.896124 2024] [mpm_winnt:notice] [pid 19788:tid 388] AH00418: Parent: Created child process 18256
+[Sun Dec 08 12:32:27.849216 2024] [mpm_winnt:notice] [pid 22580:tid 408] AH00364: Child: All worker threads have exited.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'curl' (tried: E:\\www\\PHP 8.4\\ext\\curl (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_curl.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: E:\\www\\PHP 8.4\\ext\\pdo_sqlite (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_pdo_sqlite.dll (The specified module could not be found)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: E:\\www\\PHP 8.4\\ext\\sqlite3 (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_sqlite3.dll (The specified module could not be found)) in Unknown on line 0
+[Sun Dec 08 12:32:28.349261 2024] [mpm_winnt:notice] [pid 18256:tid 384] AH00354: Child: Starting 64 worker threads.
+[Sun Dec 08 12:32:44.148437 2024] [mpm_winnt:notice] [pid 19788:tid 388] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Dec 08 12:33:14.148840 2024] [mpm_winnt:notice] [pid 19788:tid 388] AH00431: Parent: Forcing termination of child process 18256
+The 'Apache2.4' service is restarting.
+Starting the 'Apache2.4' service
+The 'Apache2.4' service is running.
+ load dynamic library 'curl' (tried: E:\\www\\PHP 8.4\\ext\\curl (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_curl.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: E:\\www\\PHP 8.4\\ext\\pdo_sqlite (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: E:\\www\\PHP 8.4\\ext\\sqlite3 (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_sqlite3.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 08 12:33:22.124981 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 08 12:33:22.124981 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 08 12:33:22.124981 2024] [core:notice] [pid 23120:tid 376] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 08 12:33:22.124981 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00418: Parent: Created child process 3588
+PHP Warning:  PHP Startup: Unable to load dynamic library 'curl' (tried: E:\\www\\PHP 8.4\\ext\\curl (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_curl.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: E:\\www\\PHP 8.4\\ext\\pdo_sqlite (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: E:\\www\\PHP 8.4\\ext\\sqlite3 (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_sqlite3.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 08 12:33:24.618579 2024] [mpm_winnt:notice] [pid 3588:tid 372] AH00354: Child: Starting 64 worker threads.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 23120:tid 376] AH00424: Parent: Received restart signal -- Restarting the server.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'curl' (tried: E:\\www\\PHP 8.4\\ext\\curl (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_curl.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: E:\\www\\PHP 8.4\\ext\\pdo_sqlite (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: E:\\www\\PHP 8.4\\ext\\sqlite3 (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_sqlite3.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 08 12:34:19.669471 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 08 12:34:19.669471 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 08 12:34:19.669471 2024] [core:notice] [pid 23120:tid 376] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 08 12:34:19.685070 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00418: Parent: Created child process 9600
+PHP Warning:  PHP Startup: Unable to load dynamic library 'curl' (tried: E:\\www\\PHP 8.4\\ext\\curl (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_curl.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: E:\\www\\PHP 8.4\\ext\\pdo_sqlite (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: E:\\www\\PHP 8.4\\ext\\sqlite3 (The specified module could not be found), E:\\www\\PHP 8.4\\ext\\php_sqlite3.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 08 12:34:22.160053 2024] [mpm_winnt:notice] [pid 9600:tid 368] AH00354: Child: Starting 64 worker threads.
+[Sun Dec 08 12:34:26.871156 2024] [mpm_winnt:notice] [pid 3588:tid 372] AH00364: Child: All worker threads have exited.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 23120:tid 376] AH00424: Parent: Received restart signal -- Restarting the server.
+PHP Warning:  PHP Startup: Unable to load dynamic library 'curl' (tried: E:/www/PHP 8.4/ext\\curl (The specified module could not be found), E:/www/PHP 8.4/ext\\php_curl.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: E:/www/PHP 8.4/ext\\pdo_sqlite (The specified module could not be found), E:/www/PHP 8.4/ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: E:/www/PHP 8.4/ext\\sqlite3 (The specified module could not be found), E:/www/PHP 8.4/ext\\php_sqlite3.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 08 12:43:34.613437 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 08 12:43:34.613437 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 08 12:43:34.613437 2024] [core:notice] [pid 23120:tid 376] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 08 12:43:34.613437 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00418: Parent: Created child process 16032
+PHP Warning:  PHP Startup: Unable to load dynamic library 'curl' (tried: E:/www/PHP 8.4/ext\\curl (The specified module could not be found), E:/www/PHP 8.4/ext\\php_curl.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: E:/www/PHP 8.4/ext\\pdo_sqlite (The specified module could not be found), E:/www/PHP 8.4/ext\\php_pdo_sqlite.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+PHP Warning:  PHP Startup: Unable to load dynamic library 'sqlite3' (tried: E:/www/PHP 8.4/ext\\sqlite3 (The specified module could not be found), E:/www/PHP 8.4/ext\\php_sqlite3.dll (This drive is locked by BitLocker Drive Encryption. You must unlock this drive from Control Panel)) in Unknown on line 0
+[Sun Dec 08 12:43:36.958672 2024] [mpm_winnt:notice] [pid 16032:tid 368] AH00354: Child: Starting 64 worker threads.
+[Sun Dec 08 12:43:39.535191 2024] [mpm_winnt:notice] [pid 9600:tid 368] AH00364: Child: All worker threads have exited.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 23120:tid 376] AH00424: Parent: Received restart signal -- Restarting the server.
+[Sun Dec 08 12:48:10.374407 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 08 12:48:10.374407 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 08 12:48:10.374407 2024] [core:notice] [pid 23120:tid 376] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 08 12:48:10.390052 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00418: Parent: Created child process 21332
+[Sun Dec 08 12:48:12.343156 2024] [mpm_winnt:notice] [pid 16032:tid 368] AH00364: Child: All worker threads have exited.
+[Sun Dec 08 12:48:12.655693 2024] [mpm_winnt:notice] [pid 21332:tid 368] AH00354: Child: Starting 64 worker threads.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 23120:tid 376] AH00424: Parent: Received restart signal -- Restarting the server.
+[Sun Dec 08 12:49:37.221600 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 08 12:49:37.221600 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 08 12:49:37.221600 2024] [core:notice] [pid 23120:tid 376] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 08 12:49:37.221600 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00418: Parent: Created child process 14180
+[Sun Dec 08 12:49:39.190343 2024] [mpm_winnt:notice] [pid 21332:tid 368] AH00364: Child: All worker threads have exited.
+[Sun Dec 08 12:49:39.518473 2024] [mpm_winnt:notice] [pid 14180:tid 376] AH00354: Child: Starting 64 worker threads.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 23120:tid 376] AH00424: Parent: Received restart signal -- Restarting the server.
+[Sun Dec 08 12:50:40.490281 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 08 12:50:40.490281 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 08 12:50:40.490281 2024] [core:notice] [pid 23120:tid 376] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 08 12:50:40.505907 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00418: Parent: Created child process 23256
+[Sun Dec 08 12:50:42.459124 2024] [mpm_winnt:notice] [pid 14180:tid 376] AH00364: Child: All worker threads have exited.
+[Sun Dec 08 12:50:42.912204 2024] [mpm_winnt:notice] [pid 23256:tid 388] AH00354: Child: Starting 64 worker threads.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 23120:tid 376] AH00424: Parent: Received restart signal -- Restarting the server.
+[Sun Dec 08 13:03:26.836898 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 08 13:03:26.836898 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 08 13:03:26.836898 2024] [core:notice] [pid 23120:tid 376] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 08 13:03:26.840901 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00418: Parent: Created child process 13880
+[Sun Dec 08 13:03:29.378494 2024] [mpm_winnt:notice] [pid 13880:tid 416] AH00354: Child: Starting 64 worker threads.
+[Sun Dec 08 13:03:50.864912 2024] [mpm_winnt:notice] [pid 23256:tid 388] AH00364: Child: All worker threads have exited.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 23120:tid 376] AH00424: Parent: Received restart signal -- Restarting the server.
+[Sun Dec 08 13:09:38.337147 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 08 13:09:38.337147 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 08 13:09:38.337147 2024] [core:notice] [pid 23120:tid 376] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 08 13:09:38.337147 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00418: Parent: Created child process 17360
+[Sun Dec 08 13:09:40.290271 2024] [mpm_winnt:notice] [pid 13880:tid 416] AH00364: Child: All worker threads have exited.
+[Sun Dec 08 13:09:40.571521 2024] [mpm_winnt:notice] [pid 17360:tid 392] AH00354: Child: Starting 64 worker threads.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 23120:tid 376] AH00424: Parent: Received restart signal -- Restarting the server.
+[Sun Dec 08 13:10:24.896128 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 08 13:10:24.896128 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 08 13:10:24.896128 2024] [core:notice] [pid 23120:tid 376] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 08 13:10:24.911753 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00418: Parent: Created child process 22700
+[Sun Dec 08 13:10:27.208623 2024] [mpm_winnt:notice] [pid 22700:tid 372] AH00354: Child: Starting 64 worker threads.
+[Sun Dec 08 13:10:45.147485 2024] [mpm_winnt:notice] [pid 17360:tid 392] AH00364: Child: All worker threads have exited.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 23120:tid 376] AH00424: Parent: Received restart signal -- Restarting the server.
+[Sun Dec 08 13:11:59.229326 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 08 13:11:59.229326 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 08 13:11:59.229326 2024] [core:notice] [pid 23120:tid 376] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 08 13:11:59.229326 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00418: Parent: Created child process 5376
+[Sun Dec 08 13:12:01.198068 2024] [mpm_winnt:notice] [pid 22700:tid 372] AH00364: Child: All worker threads have exited.
+[Sun Dec 08 13:12:01.729319 2024] [mpm_winnt:notice] [pid 5376:tid 384] AH00354: Child: Starting 64 worker threads.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 23120:tid 376] AH00424: Parent: Received restart signal -- Restarting the server.
+[Sun Dec 08 13:15:25.109338 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 08 13:15:25.109338 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 08 13:15:25.109338 2024] [core:notice] [pid 23120:tid 376] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 08 13:15:25.109338 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00418: Parent: Created child process 18764
+[Sun Dec 08 13:15:27.078488 2024] [mpm_winnt:notice] [pid 5376:tid 384] AH00364: Child: All worker threads have exited.
+[Sun Dec 08 13:15:27.375399 2024] [mpm_winnt:notice] [pid 18764:tid 392] AH00354: Child: Starting 64 worker threads.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 23120:tid 376] AH00424: Parent: Received restart signal -- Restarting the server.
+[Sun Dec 08 13:16:33.565227 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 08 13:16:33.565227 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 08 13:16:33.565227 2024] [core:notice] [pid 23120:tid 376] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 08 13:16:33.565227 2024] [mpm_winnt:notice] [pid 23120:tid 376] AH00418: Parent: Created child process 11284
+[Sun Dec 08 13:16:36.002726 2024] [mpm_winnt:notice] [pid 11284:tid 368] AH00354: Child: Starting 64 worker threads.
+[Sun Dec 08 13:17:07.843052 2024] [mpm_winnt:notice] [pid 18764:tid 392] AH00362: Child: Waiting 30 more seconds for 1 worker threads to finish.
+[Sun Dec 08 13:17:16.853468 2024] [mpm_winnt:notice] [pid 18764:tid 392] AH00364: Child: All worker threads have exited.
+[Sat Dec 14 09:12:35.362901 2024] [php:error] [pid 11284:tid 1176] [client ::1:35285] script 'E:/www/WebApp/api/login.php' not found or unable to stat, referer: http://localhost/ui.php
+[Tue Dec 17 21:25:33.019828 2024] [core:warn] [pid 5308:tid 352] AH00098: pid file E:/www/Apache 2.4/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Dec 17 21:25:33.151585 2024] [mpm_winnt:notice] [pid 5308:tid 352] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Tue Dec 17 21:25:33.151585 2024] [mpm_winnt:notice] [pid 5308:tid 352] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Tue Dec 17 21:25:33.151585 2024] [core:notice] [pid 5308:tid 352] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Tue Dec 17 21:25:33.155100 2024] [mpm_winnt:notice] [pid 5308:tid 352] AH00418: Parent: Created child process 7076
+[Tue Dec 17 21:25:35.192127 2024] [mpm_winnt:notice] [pid 7076:tid 392] AH00354: Child: Starting 64 worker threads.
+[Tue Dec 17 21:43:09.679063 2024] [mpm_winnt:notice] [pid 5308:tid 352] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Dec 17 21:43:11.710906 2024] [mpm_winnt:notice] [pid 7076:tid 392] AH00364: Child: All worker threads have exited.
+[Tue Dec 17 21:43:11.726528 2024] [mpm_winnt:notice] [pid 5308:tid 352] AH00430: Parent: Child process 7076 exited successfully.
+[Tue Dec 17 21:44:09.638115 2024] [mpm_winnt:notice] [pid 5500:tid 356] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Tue Dec 17 21:44:09.639119 2024] [mpm_winnt:notice] [pid 5500:tid 356] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Tue Dec 17 21:44:09.639119 2024] [core:notice] [pid 5500:tid 356] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Tue Dec 17 21:44:09.643623 2024] [mpm_winnt:notice] [pid 5500:tid 356] AH00418: Parent: Created child process 7120
+[Tue Dec 17 21:44:11.701565 2024] [mpm_winnt:notice] [pid 7120:tid 204] AH00354: Child: Starting 64 worker threads.
+[Tue Dec 17 22:58:22.655158 2024] [mpm_winnt:notice] [pid 5500:tid 356] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Dec 17 22:58:34.780116 2024] [mpm_winnt:notice] [pid 7120:tid 204] AH00364: Child: All worker threads have exited.
+[Tue Dec 17 22:58:34.844150 2024] [mpm_winnt:notice] [pid 5500:tid 356] AH00430: Parent: Child process 7120 exited successfully.
+[Tue Dec 17 22:58:40.238852 2024] [mpm_winnt:notice] [pid 13104:tid 376] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Tue Dec 17 22:58:40.238852 2024] [mpm_winnt:notice] [pid 13104:tid 376] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Tue Dec 17 22:58:40.238852 2024] [core:notice] [pid 13104:tid 376] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Tue Dec 17 22:58:40.254490 2024] [mpm_winnt:notice] [pid 13104:tid 376] AH00418: Parent: Created child process 13260
+[Tue Dec 17 22:58:45.054344 2024] [mpm_winnt:notice] [pid 13260:tid 376] AH00354: Child: Starting 64 worker threads.
+[Thu Dec 19 21:52:35.674892 2024] [php:error] [pid 13260:tid 1156] [client ::1:20660] script 'E:/www/WebApp/api/V1/auth.checkauth.php' not found or unable to stat
+[Fri Dec 20 19:20:15.838800 2024] [php:error] [pid 13260:tid 1112] [client ::1:55343] script 'E:/www/WebApp/api/V1/auth/checkauth.php' not found or unable to stat
+[Fri Dec 20 20:13:02.364798 2024] [php:error] [pid 13260:tid 1112] [client ::1:55849] script 'E:/www/WebApp/api/V1/auth/signin.php' not found or unable to stat
+[Sun Dec 22 14:18:23.170613 2024] [mpm_winnt:notice] [pid 13104:tid 376] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Dec 22 14:18:25.237880 2024] [mpm_winnt:notice] [pid 13260:tid 376] AH00364: Child: All worker threads have exited.
+[Sun Dec 22 14:18:25.378337 2024] [mpm_winnt:notice] [pid 13104:tid 376] AH00430: Parent: Child process 13260 exited successfully.
+[Sun Dec 22 14:19:04.831038 2024] [mpm_winnt:notice] [pid 5256:tid 356] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 22 14:19:04.832037 2024] [mpm_winnt:notice] [pid 5256:tid 356] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 22 14:19:04.832037 2024] [core:notice] [pid 5256:tid 356] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 22 14:19:04.838568 2024] [mpm_winnt:notice] [pid 5256:tid 356] AH00418: Parent: Created child process 6860
+[Sun Dec 22 14:19:07.926127 2024] [mpm_winnt:notice] [pid 6860:tid 180] AH00354: Child: Starting 64 worker threads.
+(OS 5)Access is denied.  : AH10014: Failed to open the 'Apache2.4' service
+[Sun Dec 22 15:54:35.417844 2024] [mpm_winnt:notice] [pid 5256:tid 356] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Dec 22 15:54:37.429425 2024] [mpm_winnt:notice] [pid 6860:tid 180] AH00364: Child: All worker threads have exited.
+[Sun Dec 22 15:54:37.455864 2024] [mpm_winnt:notice] [pid 5256:tid 356] AH00430: Parent: Child process 6860 exited successfully.
+Starting the 'Apache2.4' service
+The 'Apache2.4' service is running.
+pm_winnt:notice] [pid 8900:tid 364] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 22 15:54:58.835936 2024] [mpm_winnt:notice] [pid 8900:tid 364] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 22 15:54:58.835936 2024] [core:notice] [pid 8900:tid 364] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 22 15:54:58.851870 2024] [mpm_winnt:notice] [pid 8900:tid 364] AH00418: Parent: Created child process 5884
+[Sun Dec 22 15:55:03.591355 2024] [mpm_winnt:notice] [pid 5884:tid 396] AH00354: Child: Starting 64 worker threads.
+The 'Apache2.4' service is restarting.
+The 'Apache2.4' service has restarted.
+winnt:notice] [pid 8900:tid 364] AH00424: Parent: Received restart signal -- Restarting the server.
+[Sun Dec 22 16:05:19.549284 2024] [mpm_winnt:notice] [pid 8900:tid 364] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 22 16:05:19.549284 2024] [mpm_winnt:notice] [pid 8900:tid 364] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 22 16:05:19.549284 2024] [core:notice] [pid 8900:tid 364] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 22 16:05:19.549284 2024] [mpm_winnt:notice] [pid 8900:tid 364] AH00418: Parent: Created child process 11996
+[Sun Dec 22 16:05:21.422178 2024] [mpm_winnt:notice] [pid 5884:tid 396] AH00364: Child: All worker threads have exited.
+[Sun Dec 22 16:05:24.317075 2024] [mpm_winnt:notice] [pid 11996:tid 204] AH00354: Child: Starting 64 worker threads.
+[Tue Dec 24 23:02:28.531541 2024] [authz_core:error] [pid 11996:tid 1100] [client ::1:13984] AH01630: client denied by server configuration: E:/www/WebApp/.htaccess
+[Tue Dec 24 23:02:42.570411 2024] [php:error] [pid 11996:tid 1132] [client ::1:13996] script 'E:/www/WebApp/public/create.php' not found or unable to stat, referer: http://localhost/public/ui.php
+[Sat Dec 28 13:37:11.876904 2024] [authz_core:error] [pid 11996:tid 1108] [client ::1:11960] AH01630: client denied by server configuration: E:/www/WebApp/.htaccess
+[Sat Dec 28 13:37:26.075840 2024] [authz_core:error] [pid 11996:tid 1108] [client ::1:12020] AH01630: client denied by server configuration: E:/www/WebApp/.htaccess
+[Sun Dec 29 00:08:52.628269 2024] [php:error] [pid 11996:tid 1072] [client ::1:45427] script 'E:/www/WebApp/signin.php' not found or unable to stat, referer: http://localhost/public/signin.php
+[Sun Dec 29 20:54:31.506033 2024] [mpm_winnt:notice] [pid 8900:tid 364] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Dec 29 20:54:33.616116 2024] [mpm_winnt:notice] [pid 11996:tid 204] AH00364: Child: All worker threads have exited.
+[Sun Dec 29 20:54:33.741107 2024] [mpm_winnt:notice] [pid 8900:tid 364] AH00430: Parent: Child process 11996 exited successfully.
+[Sun Dec 29 20:55:17.212299 2024] [mpm_winnt:notice] [pid 5432:tid 340] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Dec 29 20:55:17.212299 2024] [mpm_winnt:notice] [pid 5432:tid 340] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Dec 29 20:55:17.212299 2024] [core:notice] [pid 5432:tid 340] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Dec 29 20:55:17.218309 2024] [mpm_winnt:notice] [pid 5432:tid 340] AH00418: Parent: Created child process 7084
+[Sun Dec 29 20:55:20.604625 2024] [mpm_winnt:notice] [pid 7084:tid 384] AH00354: Child: Starting 64 worker threads.
+[Mon Dec 30 20:48:30.889418 2024] [php:error] [pid 7084:tid 1156] [client ::1:22077] script 'E:/www/WebApp/public/login.php' not found or unable to stat
+[Mon Dec 30 22:15:14.476171 2024] [php:error] [pid 7084:tid 1156] [client ::1:25362] script 'E:/www/WebApp/api/V1/notes/signup.php' not found or unable to stat
+[Mon Dec 30 22:17:57.400018 2024] [authz_core:error] [pid 7084:tid 1156] [client ::1:25596] AH01630: client denied by server configuration: E:/www/WebApp/.htaccess
+[Mon Dec 30 22:21:39.156539 2024] [mpm_winnt:notice] [pid 5432:tid 340] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Dec 30 22:21:44.145144 2024] [mpm_winnt:notice] [pid 7084:tid 384] AH00364: Child: All worker threads have exited.
+[Mon Dec 30 22:21:44.260540 2024] [mpm_winnt:notice] [pid 5432:tid 340] AH00430: Parent: Child process 7084 exited successfully.
+[Mon Dec 30 22:21:49.538978 2024] [mpm_winnt:notice] [pid 17268:tid 352] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Mon Dec 30 22:21:49.538978 2024] [mpm_winnt:notice] [pid 17268:tid 352] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Mon Dec 30 22:21:49.538978 2024] [core:notice] [pid 17268:tid 352] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Mon Dec 30 22:21:49.573185 2024] [mpm_winnt:notice] [pid 17268:tid 352] AH00418: Parent: Created child process 13848
+[Mon Dec 30 22:21:54.383524 2024] [mpm_winnt:notice] [pid 13848:tid 212] AH00354: Child: Starting 64 worker threads.
+[Mon Dec 30 23:04:58.827259 2024] [php:error] [pid 13848:tid 1160] [client ::1:28245] script 'E:/www/WebApp/fe4.php' not found or unable to stat, referer: http://localhost/public/login.php
+[Mon Dec 30 23:05:28.837955 2024] [php:error] [pid 13848:tid 1160] [client ::1:28291] script 'E:/www/WebApp/fe4.php' not found or unable to stat, referer: http://localhost/public/login.php
+[Mon Dec 30 23:06:20.827612 2024] [php:error] [pid 13848:tid 1160] [client ::1:28360] script 'E:/www/WebApp/fe4.php' not found or unable to stat, referer: http://localhost/public/login.php
+[Tue Dec 31 20:08:49.707883 2024] [php:error] [pid 13848:tid 784] [client ::1:7017] script 'E:/www/WebApp/public/signin.php' not found or unable to stat
+[Tue Dec 31 20:10:15.714078 2024] [php:error] [pid 13848:tid 784] [client ::1:7070] script 'E:/www/WebApp/public/signin.php' not found or unable to stat
+[Tue Dec 31 20:11:14.429016 2024] [php:error] [pid 13848:tid 780] [client ::1:7081] script 'E:/www/WebApp/public/signin.php' not found or unable to stat
+[Wed Jan 01 18:26:45.091868 2025] [php:error] [pid 13848:tid 432] [client ::1:32535] script 'E:/www/WebApp/public/signin.php' not found or unable to stat
+[Wed Jan 01 18:26:57.605832 2025] [php:error] [pid 13848:tid 784] [client ::1:32540] script 'E:/www/WebApp/public/login.php.php' not found or unable to stat
+[Wed Jan 01 20:27:52.055362 2025] [php:error] [pid 13848:tid 784] [client ::1:27682] script 'E:/www/WebApp/api/V1/auth/validate_token.php' not found or unable to stat, referer: http://localhost/public/fe3.php
+[Wed Jan 01 20:27:58.844663 2025] [php:error] [pid 13848:tid 780] [client ::1:27683] script 'E:/www/WebApp/api/V1/auth/validate_token.php' not found or unable to stat, referer: http://localhost/public/fe3.php
+[Wed Jan 01 20:28:27.564784 2025] [php:error] [pid 13848:tid 780] [client ::1:27695] script 'E:/www/WebApp/api/V1/auth/validate_token.php' not found or unable to stat, referer: http://localhost/public/fe3.php
+[Wed Jan 01 20:28:56.468821 2025] [php:error] [pid 13848:tid 780] [client ::1:27724] script 'E:/www/WebApp/api/V1/auth/validate_token.php' not found or unable to stat, referer: http://localhost/public/fe3.php
+[Wed Jan 01 20:30:45.965279 2025] [php:error] [pid 13848:tid 784] [client ::1:27778] script 'E:/www/WebApp/api/V1/auth/validate_token.php' not found or unable to stat, referer: http://localhost/public/fe3.php
+[Sat Jan 11 12:43:22.125398 2025] [mpm_winnt:notice] [pid 17268:tid 352] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Jan 11 12:43:24.203427 2025] [mpm_winnt:notice] [pid 13848:tid 212] AH00364: Child: All worker threads have exited.
+[Sat Jan 11 12:43:24.312796 2025] [mpm_winnt:notice] [pid 17268:tid 352] AH00430: Parent: Child process 13848 exited successfully.
+[Sat Jan 11 12:44:06.760188 2025] [mpm_winnt:notice] [pid 4988:tid 356] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sat Jan 11 12:44:06.760188 2025] [mpm_winnt:notice] [pid 4988:tid 356] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sat Jan 11 12:44:06.761188 2025] [core:notice] [pid 4988:tid 356] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sat Jan 11 12:44:06.770183 2025] [mpm_winnt:notice] [pid 4988:tid 356] AH00418: Parent: Created child process 5140
+[Sat Jan 11 12:44:10.687345 2025] [mpm_winnt:notice] [pid 5140:tid 404] AH00354: Child: Starting 64 worker threads.
+[Sat Jan 11 13:07:40.169217 2025] [php:error] [pid 5140:tid 1156] [client ::1:52643] script 'E:/www/WebApp/public/fe24.php' not found or unable to stat
+[Sat Jan 11 13:08:40.402059 2025] [mpm_winnt:notice] [pid 4988:tid 356] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Jan 11 13:08:42.418805 2025] [mpm_winnt:notice] [pid 5140:tid 404] AH00364: Child: All worker threads have exited.
+[Sat Jan 11 13:08:42.482485 2025] [mpm_winnt:notice] [pid 4988:tid 356] AH00430: Parent: Child process 5140 exited successfully.
+[Sat Jan 11 13:08:47.995396 2025] [mpm_winnt:notice] [pid 2184:tid 356] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sat Jan 11 13:08:47.995396 2025] [mpm_winnt:notice] [pid 2184:tid 356] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sat Jan 11 13:08:47.995396 2025] [core:notice] [pid 2184:tid 356] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sat Jan 11 13:08:48.028149 2025] [mpm_winnt:notice] [pid 2184:tid 356] AH00418: Parent: Created child process 11076
+[Sat Jan 11 13:08:52.826020 2025] [mpm_winnt:notice] [pid 11076:tid 416] AH00354: Child: Starting 64 worker threads.
+[Sat Jan 11 18:39:56.204037 2025] [php:error] [pid 11076:tid 1132] [client ::1:20854] script 'E:/www/WebApp/api/V1/misc/imp.php' not found or unable to stat
+[Sat Jan 11 20:10:03.501324 2025] [php:error] [pid 11076:tid 1148] [client ::1:22542] script 'E:/www/WebApp/login.php' not found or unable to stat
+[Sat Jan 11 20:58:59.615773 2025] [php:error] [pid 11076:tid 1132] [client ::1:24533] script 'E:/www/WebApp/api/V1/auth/register.php' not found or unable to stat
+[Sat Jan 11 20:59:10.702714 2025] [php:error] [pid 11076:tid 1116] [client ::1:24537] script 'E:/www/WebApp/api/V1/auth/signin.php' not found or unable to stat
+[Sat Jan 11 21:01:19.000090 2025] [authz_core:error] [pid 11076:tid 1116] [client ::1:24619] AH01630: client denied by server configuration: E:/www/WebApp/.htaccess
+[Sat Jan 11 21:01:26.910481 2025] [authz_core:error] [pid 11076:tid 1116] [client ::1:24619] AH01630: client denied by server configuration: E:/www/WebApp/.htaccess, referer: http://localhost/model/
+[Sat Jan 11 23:41:43.916655 2025] [authz_core:error] [pid 11076:tid 1160] [client ::1:4587] AH01630: client denied by server configuration: E:/www/WebApp/.htaccess
+[Sun Jan 12 00:07:46.345034 2025] [mpm_winnt:notice] [pid 2184:tid 356] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Jan 12 00:07:48.368263 2025] [mpm_winnt:notice] [pid 11076:tid 416] AH00364: Child: All worker threads have exited.
+[Sun Jan 12 00:07:48.480131 2025] [mpm_winnt:notice] [pid 2184:tid 356] AH00430: Parent: Child process 11076 exited successfully.
+[Sun Jan 12 00:07:53.753133 2025] [mpm_winnt:notice] [pid 15228:tid 172] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Jan 12 00:07:53.753133 2025] [mpm_winnt:notice] [pid 15228:tid 172] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Jan 12 00:07:53.753133 2025] [core:notice] [pid 15228:tid 172] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Jan 12 00:07:53.776328 2025] [mpm_winnt:notice] [pid 15228:tid 172] AH00418: Parent: Created child process 2940
+[Sun Jan 12 00:07:58.381348 2025] [mpm_winnt:notice] [pid 2940:tid 384] AH00354: Child: Starting 64 worker threads.
+[Sun Jan 12 00:07:58.381348 2025] [authz_core:error] [pid 2940:tid 1144] [client ::1:5081] AH01630: client denied by server configuration: E:/www/WebApp/
+[Sun Jan 12 00:07:58.381348 2025] [authz_core:error] [pid 2940:tid 1132] [client 127.0.0.1:5084] AH01630: client denied by server configuration: E:/www/WebApp/index.php
+[Sun Jan 12 00:08:15.858482 2025] [authz_core:error] [pid 2940:tid 1144] [client ::1:5086] AH01630: client denied by server configuration: E:/www/WebApp/
+[Sun Jan 12 00:08:19.476769 2025] [core:alert] [pid 2940:tid 1144] [client ::1:5086] E:/www/WebApp/public/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:08:25.550193 2025] [core:alert] [pid 2940:tid 1144] [client ::1:5088] E:/www/WebApp/public/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:08:25.879127 2025] [core:alert] [pid 2940:tid 1132] [client ::1:5089] E:/www/WebApp/public/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:09:29.404654 2025] [mpm_winnt:notice] [pid 15228:tid 172] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Jan 12 00:09:31.417879 2025] [mpm_winnt:notice] [pid 2940:tid 384] AH00364: Child: All worker threads have exited.
+[Sun Jan 12 00:09:31.442537 2025] [mpm_winnt:notice] [pid 15228:tid 172] AH00430: Parent: Child process 2940 exited successfully.
+[Sun Jan 12 00:09:36.726591 2025] [mpm_winnt:notice] [pid 800:tid 360] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Jan 12 00:09:36.726591 2025] [mpm_winnt:notice] [pid 800:tid 360] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Jan 12 00:09:36.726591 2025] [core:notice] [pid 800:tid 360] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Jan 12 00:09:36.752120 2025] [mpm_winnt:notice] [pid 800:tid 360] AH00418: Parent: Created child process 5844
+[Sun Jan 12 00:09:41.242711 2025] [mpm_winnt:notice] [pid 5844:tid 368] AH00354: Child: Starting 64 worker threads.
+[Sun Jan 12 00:09:49.005979 2025] [core:alert] [pid 5844:tid 1140] [client ::1:5099] E:/www/WebApp/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:09:51.404106 2025] [core:alert] [pid 5844:tid 1132] [client ::1:5100] E:/www/WebApp/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:10:00.256827 2025] [core:alert] [pid 5844:tid 1140] [client ::1:5102] E:/www/WebApp/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:10:02.326221 2025] [core:alert] [pid 5844:tid 1140] [client ::1:5104] E:/www/WebApp/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:10:02.694680 2025] [core:alert] [pid 5844:tid 1132] [client ::1:5105] E:/www/WebApp/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:10:52.300199 2025] [mpm_winnt:notice] [pid 800:tid 360] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Jan 12 00:11:03.701580 2025] [mpm_winnt:notice] [pid 5844:tid 368] AH00364: Child: All worker threads have exited.
+[Sun Jan 12 00:11:03.734629 2025] [mpm_winnt:notice] [pid 800:tid 360] AH00430: Parent: Child process 5844 exited successfully.
+[Sun Jan 12 00:11:08.643953 2025] [mpm_winnt:notice] [pid 9308:tid 352] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Jan 12 00:11:08.643953 2025] [mpm_winnt:notice] [pid 9308:tid 352] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Jan 12 00:11:08.643953 2025] [core:notice] [pid 9308:tid 352] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Jan 12 00:11:08.659594 2025] [mpm_winnt:notice] [pid 9308:tid 352] AH00418: Parent: Created child process 14420
+[Sun Jan 12 00:11:13.011563 2025] [mpm_winnt:notice] [pid 14420:tid 200] AH00354: Child: Starting 64 worker threads.
+[Sun Jan 12 00:11:14.420928 2025] [core:alert] [pid 14420:tid 1140] [client ::1:5113] E:/www/WebApp/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:11:16.153444 2025] [core:alert] [pid 14420:tid 1132] [client ::1:5114] E:/www/WebApp/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:12:29.922961 2025] [core:alert] [pid 14420:tid 1140] [client ::1:5125] E:/www/WebApp/public/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:12:31.654385 2025] [core:alert] [pid 14420:tid 1132] [client ::1:5126] E:/www/WebApp/public/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:12:37.466142 2025] [core:alert] [pid 14420:tid 1140] [client ::1:5128] E:/www/WebApp/public/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:12:54.733130 2025] [mpm_winnt:notice] [pid 9308:tid 352] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Jan 12 00:13:24.737850 2025] [mpm_winnt:notice] [pid 9308:tid 352] AH00431: Parent: Forcing termination of child process 14420
+[Sun Jan 12 00:13:29.448696 2025] [mpm_winnt:notice] [pid 10632:tid 352] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Jan 12 00:13:29.448696 2025] [mpm_winnt:notice] [pid 10632:tid 352] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Jan 12 00:13:29.448696 2025] [core:notice] [pid 10632:tid 352] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Jan 12 00:13:29.464323 2025] [mpm_winnt:notice] [pid 10632:tid 352] AH00418: Parent: Created child process 7312
+[Sun Jan 12 00:13:34.003043 2025] [mpm_winnt:notice] [pid 7312:tid 392] AH00354: Child: Starting 64 worker threads.
+[Sun Jan 12 00:15:10.743158 2025] [mpm_winnt:notice] [pid 10632:tid 352] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Jan 12 00:15:12.760043 2025] [mpm_winnt:notice] [pid 7312:tid 392] AH00364: Child: All worker threads have exited.
+[Sun Jan 12 00:15:12.809620 2025] [mpm_winnt:notice] [pid 10632:tid 352] AH00430: Parent: Child process 7312 exited successfully.
+[Sun Jan 12 00:15:17.922340 2025] [mpm_winnt:notice] [pid 2752:tid 196] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Jan 12 00:15:17.922340 2025] [mpm_winnt:notice] [pid 2752:tid 196] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Jan 12 00:15:17.922340 2025] [core:notice] [pid 2752:tid 196] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Jan 12 00:15:17.937969 2025] [mpm_winnt:notice] [pid 2752:tid 196] AH00418: Parent: Created child process 9964
+[Sun Jan 12 00:15:22.959520 2025] [mpm_winnt:notice] [pid 9964:tid 196] AH00354: Child: Starting 64 worker threads.
+[Sun Jan 12 00:16:06.858056 2025] [core:alert] [pid 9964:tid 1136] [client ::1:5211] E:/www/WebApp/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:17:14.508774 2025] [core:alert] [pid 9964:tid 1168] [client ::1:5236] E:/www/WebApp/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:17:16.305804 2025] [core:alert] [pid 9964:tid 1136] [client ::1:5237] E:/www/WebApp/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:17:31.473755 2025] [core:alert] [pid 9964:tid 1168] [client ::1:5239] E:/www/WebApp/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:17:33.188309 2025] [core:alert] [pid 9964:tid 1136] [client ::1:5242] E:/www/WebApp/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:17:37.738443 2025] [core:alert] [pid 9964:tid 1168] [client ::1:5244] E:/www/WebApp/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:17:39.218640 2025] [core:alert] [pid 9964:tid 1136] [client ::1:5246] E:/www/WebApp/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:17:42.147443 2025] [core:alert] [pid 9964:tid 1168] [client ::1:5248] E:/www/WebApp/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:17:42.487874 2025] [core:alert] [pid 9964:tid 1168] [client ::1:5250] E:/www/WebApp/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:17:59.317615 2025] [core:alert] [pid 9964:tid 1136] [client ::1:5251] E:/www/WebApp/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:17:59.627198 2025] [core:alert] [pid 9964:tid 1136] [client ::1:5254] E:/www/WebApp/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:18:01.171044 2025] [core:alert] [pid 9964:tid 1168] [client ::1:5255] E:/www/WebApp/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:18:59.330868 2025] [core:alert] [pid 9964:tid 1168] [client ::1:5257] E:/www/WebApp/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:19:04.207706 2025] [core:alert] [pid 9964:tid 1136] [client ::1:5292] E:/www/WebApp/.htaccess: Invalid command 'RewriteEngine', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:20:11.717883 2025] [mpm_winnt:notice] [pid 2752:tid 196] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Jan 12 00:20:13.734099 2025] [mpm_winnt:notice] [pid 9964:tid 196] AH00364: Child: All worker threads have exited.
+[Sun Jan 12 00:20:13.782401 2025] [mpm_winnt:notice] [pid 2752:tid 196] AH00430: Parent: Child process 9964 exited successfully.
+[Sun Jan 12 00:20:19.015996 2025] [mpm_winnt:notice] [pid 10496:tid 376] AH00455: Apache/2.4.62 (Win64) PHP/8.4.1 configured -- resuming normal operations
+[Sun Jan 12 00:20:19.015996 2025] [mpm_winnt:notice] [pid 10496:tid 376] AH00456: Apache Lounge VS17 Server built: Sep  4 2024 10:31:52
+[Sun Jan 12 00:20:19.015996 2025] [core:notice] [pid 10496:tid 376] AH00094: Command line: 'E:\\www\\Apache 2.4\\bin\\httpd.exe -d E:/www/Apache 2.4'
+[Sun Jan 12 00:20:19.015996 2025] [mpm_winnt:notice] [pid 10496:tid 376] AH00418: Parent: Created child process 8944
+[Sun Jan 12 00:20:23.849027 2025] [mpm_winnt:notice] [pid 8944:tid 392] AH00354: Child: Starting 64 worker threads.
+[Sun Jan 12 00:21:53.085191 2025] [core:alert] [pid 8944:tid 1176] [client ::1:5337] E:/www/WebApp/.htaccess: Invalid command 'Header', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:21:53.470415 2025] [core:alert] [pid 8944:tid 1176] [client ::1:5338] E:/www/WebApp/.htaccess: Invalid command 'Header', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:21:57.730408 2025] [core:alert] [pid 8944:tid 1188] [client ::1:5339] E:/www/WebApp/.htaccess: Invalid command 'Header', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:22:58.982994 2025] [autoindex:error] [pid 8944:tid 1188] [client ::1:5341] AH01276: Cannot serve directory E:/www/WebApp/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun Jan 12 00:23:53.416260 2025] [autoindex:error] [pid 8944:tid 1176] [client ::1:5397] AH01276: Cannot serve directory E:/www/WebApp/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun Jan 12 00:23:53.772982 2025] [autoindex:error] [pid 8944:tid 1176] [client ::1:5397] AH01276: Cannot serve directory E:/www/WebApp/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun Jan 12 00:23:55.513190 2025] [autoindex:error] [pid 8944:tid 1176] [client ::1:5397] AH01276: Cannot serve directory E:/www/WebApp/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun Jan 12 00:26:08.340790 2025] [autoindex:error] [pid 8944:tid 1176] [client ::1:5468] AH01276: Cannot serve directory E:/www/WebApp/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun Jan 12 00:26:10.302564 2025] [autoindex:error] [pid 8944:tid 1176] [client ::1:5468] AH01276: Cannot serve directory E:/www/WebApp/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun Jan 12 00:26:31.583292 2025] [autoindex:error] [pid 8944:tid 1188] [client ::1:5469] AH01276: Cannot serve directory E:/www/WebApp/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun Jan 12 00:28:06.846499 2025] [autoindex:error] [pid 8944:tid 1176] [client ::1:5527] AH01276: Cannot serve directory E:/www/WebApp/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun Jan 12 00:30:24.817103 2025] [core:alert] [pid 8944:tid 1188] [client ::1:5549] E:/www/WebApp/.htaccess: Invalid command 'Header', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:30:25.382283 2025] [core:alert] [pid 8944:tid 1188] [client ::1:5550] E:/www/WebApp/.htaccess: Invalid command 'Header', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:30:34.707894 2025] [autoindex:error] [pid 8944:tid 1176] [client ::1:5551] AH01276: Cannot serve directory E:/www/WebApp/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun Jan 12 00:30:36.154181 2025] [autoindex:error] [pid 8944:tid 1176] [client ::1:5551] AH01276: Cannot serve directory E:/www/WebApp/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun Jan 12 00:34:47.553726 2025] [core:alert] [pid 8944:tid 1176] [client ::1:5687] E:/www/WebApp/.htaccess: Invalid command 'Header', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:39:30.629035 2025] [autoindex:error] [pid 8944:tid 1188] [client ::1:5767] AH01276: Cannot serve directory E:/www/WebApp/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun Jan 12 00:40:04.422441 2025] [autoindex:error] [pid 8944:tid 1188] [client ::1:5779] AH01276: Cannot serve directory E:/www/WebApp/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun Jan 12 00:40:04.825305 2025] [autoindex:error] [pid 8944:tid 1188] [client ::1:5779] AH01276: Cannot serve directory E:/www/WebApp/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun Jan 12 00:41:42.797672 2025] [autoindex:error] [pid 8944:tid 1176] [client ::1:5837] AH01276: Cannot serve directory E:/www/WebApp/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun Jan 12 00:41:43.141616 2025] [autoindex:error] [pid 8944:tid 1176] [client ::1:5837] AH01276: Cannot serve directory E:/www/WebApp/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun Jan 12 00:41:55.887805 2025] [autoindex:error] [pid 8944:tid 1148] [client ::1:5842] AH01276: Cannot serve directory E:/www/WebApp/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun Jan 12 00:44:52.481931 2025] [autoindex:error] [pid 8944:tid 1124] [client ::1:5908] AH01276: Cannot serve directory E:/www/WebApp/public/fonts/material-icon/css/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun Jan 12 00:44:57.647606 2025] [autoindex:error] [pid 8944:tid 1124] [client ::1:5911] AH01276: Cannot serve directory E:/www/WebApp/public/fonts/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun Jan 12 00:47:59.539818 2025] [autoindex:error] [pid 8944:tid 1124] [client ::1:6026] AH01276: Cannot serve directory E:/www/WebApp/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun Jan 12 00:47:59.858561 2025] [autoindex:error] [pid 8944:tid 1124] [client ::1:6026] AH01276: Cannot serve directory E:/www/WebApp/public/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Sun Jan 12 00:49:07.221096 2025] [core:alert] [pid 8944:tid 1148] [client ::1:6048] E:/www/WebApp/.htaccess: Invalid command 'Header', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:49:07.603626 2025] [core:alert] [pid 8944:tid 1148] [client ::1:6049] E:/www/WebApp/.htaccess: Invalid command 'Header', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:49:33.704049 2025] [core:alert] [pid 8944:tid 1148] [client ::1:6051] E:/www/WebApp/.htaccess: Invalid command 'Header', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:49:35.954412 2025] [core:alert] [pid 8944:tid 1148] [client ::1:6053] E:/www/WebApp/.htaccess: Invalid command 'Header', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:49:45.619859 2025] [core:alert] [pid 8944:tid 1148] [client ::1:6055] E:/www/WebApp/.htaccess: Invalid command 'Header', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:49:47.509552 2025] [core:alert] [pid 8944:tid 1148] [client ::1:6058] E:/www/WebApp/.htaccess: Invalid command 'Header', perhaps misspelled or defined by a module not included in the server configuration
+[Sun Jan 12 00:50:09.335508 2025] [authz_core:error] [pid 8944:tid 1148] [client ::1:6063] AH01630: client denied by server configuration: E:/www/WebApp/public/login.php
+[Sun Jan 12 00:50:35.527919 2025] [authz_core:error] [pid 8944:tid 1148] [client ::1:6067] AH01630: client denied by server configuration: E:/www/WebApp/.htaccess
+[Sun Jan 12 00:50:48.093919 2025] [authz_core:error] [pid 8944:tid 1148] [client ::1:6070] AH01630: client denied by server configuration: E:/www/WebApp/.htaccess
